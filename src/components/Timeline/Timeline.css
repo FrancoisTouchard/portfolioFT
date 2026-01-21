@@ -1,0 +1,144 @@
+.container {
+  background-color: #0f172a;
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 3rem;
+  color: #f8fafc;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+  border-radius: 2px;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 80px;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timelineItemLeft {
+  padding-right: 50%;
+}
+
+.timelineItemRight {
+  padding-left: 50%;
+}
+
+.timelineItemHidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.timelineItemVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timelineContent {
+  position: relative;
+}
+
+.timelineMarker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* transform: translateX(-50%); */
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+  border: 5px solid #0f172a;
+  box-shadow: 0 0 0 3px #3b82f6, 0 4px 12px rgba(59, 130, 246, 0.5);
+}
+
+.dateLabel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timelineItemLeft .dateLabel {
+  left: calc(100% + 12px);
+}
+
+.timelineItemRight .dateLabel {
+  right: calc(100% + 12px);
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .timelineItemLeft,
+  .timelineItemRight {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .timelineLine {
+    left: 20px;
+  }
+
+  /* Forcer tous les dateLabel à droite */
+  .dateLabel {
+    left: calc(100% + 12px);
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .timelineItemRight .dateLabel {
+    right: auto;
+  }
+
+  .timelineMarker {
+    left: 20px;
+    /* aligné avec la ligne */
+    top: 0;
+    /* au sommet du timelineItem */
+    transform: translateY(-20%, -20%);
+    /* le faire "flotter" au-dessus */
+    /* background-color: crimson; */
+  }
+
+  .timelineItem {
+    padding-top: 40px;
+    /* background-color: wheat; */
+    /* espace pour éviter chevauchement */
+  }
+}
