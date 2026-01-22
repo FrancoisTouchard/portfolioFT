@@ -1,0 +1,57 @@
+.squares-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* padding = moitié de la diagonale moins un ajustement visuel 0,3 
+  (la vraie moitié = 0,707 créait trop d'espace)  */
+  padding: calc(min(400px, 30vw) * 0.3) 20px;
+  box-sizing: border-box;
+  /* Gap = √2 - 1 ≈ 0.414 
+  (√2 = longueur de la diagonale d’un carré de côté 1)
+  pour que les coins des carrés se touchent sans se superposer */
+  gap: calc(min(400px, 30vw) * 0.414);
+}
+
+.square {
+  width: min(400px, 30vw);
+  height: min(400px, 30vw);
+  position: relative;
+  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+  padding: 5px;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.inner-square {
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilepic {
+  transform: rotate(-45deg) scale(1.42);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.text-job {
+  color: black;
+  transform: rotate(-45deg);
+  font-size: clamp(14px, 3vw, 20px);
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .squares-container {
+    padding: calc(min(400px, 30vw) * 0.3) 20px;
+  }
+}
