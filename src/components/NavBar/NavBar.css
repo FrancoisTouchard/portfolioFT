@@ -16,10 +16,20 @@
 .nav-description {
   color: white;
   text-decoration: none;
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+}
+
+.nav-description-name {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.nav-description-job {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .nav-links {
@@ -78,6 +88,10 @@
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+
+  .nav-description-name {
+    font-size: 18px;
   }
 
   .nav-description-job {
