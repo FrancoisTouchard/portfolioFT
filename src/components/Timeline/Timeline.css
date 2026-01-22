@@ -14,9 +14,9 @@
 
 .timeline {
   position: relative;
+  /*Limiter l'espacement des cards*/
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
 }
 
 .timelineLine {
@@ -61,7 +61,6 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  /* transform: translateX(-50%); */
   transform: translate(-50%, -50%);
   z-index: 10;
 }
@@ -114,31 +113,22 @@
     left: 20px;
   }
 
-  /* Forcer tous les dateLabel à droite */
+  /* Forcer tous les dateLabel à droite du marker */
   .dateLabel {
     left: calc(100% + 12px);
-    right: auto;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
+  /*Gérer la largeur des dateLabel de droite */
   .timelineItemRight .dateLabel {
     right: auto;
   }
 
   .timelineMarker {
     left: 20px;
-    /* aligné avec la ligne */
     top: 0;
-    /* au sommet du timelineItem */
-    transform: translateY(-20%, -20%);
-    /* le faire "flotter" au-dessus */
-    /* background-color: crimson; */
   }
 
   .timelineItem {
     padding-top: 40px;
-    /* background-color: wheat; */
-    /* espace pour éviter chevauchement */
   }
 }
