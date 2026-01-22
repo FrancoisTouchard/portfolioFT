@@ -1,10 +1,10 @@
 .NavBar {
   width: 100%;
   height: 70px;
-  background-color: red;
+  background-color: #0f172a;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 0 30px;
   position: fixed;
   top: 0;
@@ -13,12 +13,18 @@
   box-sizing: border-box;
 }
 
+.nav-description {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav-links {
   display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
   gap: 30px;
-  width: 100%;
 }
 
 .nav-links a {
@@ -29,5 +35,56 @@
 }
 
 .nav-links a:hover {
-  color: #f0f0f0;
+  color: chartreuse;
+}
+
+.nav-link.active {
+  color: #f0f0f0 !important;
+  font-weight: 500;
+  border-bottom: 2px solid white;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger img {
+  width: 28px;
+  height: 28px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-description-job {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
 }
