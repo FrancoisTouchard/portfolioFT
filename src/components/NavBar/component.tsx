@@ -25,7 +25,7 @@ const NavBar = () => {
     <nav className="NavBar">
       <div className="nav-description" onClick={() => navigate("/")}>
         <span className="nav-description-name">François Touchard</span>
-        <span className="nav-description-job">Développeur front-end applications mobile</span>
+        <span className="nav-description-job">Développeur front-end</span>
       </div>
       <div className="nav-links">
         <Link className={`nav-link ${isActive('/') ? 'active' : ''}`} to="/" onClick={closeMenu}>Accueil</Link>
