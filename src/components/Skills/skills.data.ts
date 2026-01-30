@@ -1,7 +1,12 @@
 import reactLogo from '../../assets/react.svg';
 import nodeLogo from '../../assets/nodejs.png';
 import postgresLogo from '../../assets/postgres.png';
-import javaLogo from '../../assets/java.png';
+import typescriptLogo from '../../assets/typescript.svg';
+import javascriptLogo from '../../assets/javascript.png';
+import nestjsLogo from '../../assets/nestjs.svg';
+import graphqlLogo from '../../assets/graphql.png';
+
+
 import { SkillProps } from './types';
 
 export const SKILLS: SkillProps[] = [
@@ -16,10 +21,26 @@ export const SKILLS: SkillProps[] = [
   {
     category: "HARD",
     description: "desc",
+    title: "TypeScript",
+    logo: { src: typescriptLogo, alt: 'Logo TypeScript' },
+    slug: "typescript",
+    tags: ["TypeScript", "Xx", "Yoooo", "lalala"]
+  },
+  {
+    category: "HARD",
+    description: "desc",
     title: "React",
     logo: { src: reactLogo, alt: 'Logo React' },
     slug: "react",
     tags: ["React", "Xx", "Yoooo"]
+  },
+  {
+    category: "HARD",
+    description: "desc",
+    title: "JavaScript",
+    logo: { src: javascriptLogo, alt: 'Logo JavaScript' },
+    slug: "react",
+    tags: ["JavaScript", "Xx", "Yoooo"]
   },
   {
     category: "HARD",
@@ -32,10 +53,10 @@ export const SKILLS: SkillProps[] = [
   {
     category: "HARD",
     description: "desc",
-    title: "Java",
-    logo: { src: javaLogo, alt: 'Logo Java' },
-    slug: "java",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    title: "Nest.js",
+    logo: { src: nestjsLogo, alt: 'Logo Nest.js' },
+    slug: "nestjs",
+    tags: ["Nest.js", "Xx", "Yoooo", "lalala"]
   },
   {
     category: "HARD",
@@ -43,6 +64,14 @@ export const SKILLS: SkillProps[] = [
     title: "PostgreSQL",
     logo: { src: postgresLogo, alt: 'Logo PostgreSQL' },
     slug: "postgresql",
+    tags: ["Communication", "Xx", "Yoooo", "lalala"]
+  },
+  {
+    category: "HARD",
+    description: "desc",
+    title: "GraphQL",
+    logo: { src: graphqlLogo, alt: 'Logo GraphQL' },
+    slug: "graphql",
     tags: ["Communication", "Xx", "Yoooo", "lalala"]
   },
   {
