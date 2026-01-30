@@ -1,6 +1,6 @@
 import React from "react";
-import PageView from "../../components/PageView/component";
-import Skills from "../../components/Skills/component";
+import PageView from "../../../components/PageView/component";
+import Skills from "../../../components/Skills/synthetic/component";
 
 const SkillsPage = () => {
   return (

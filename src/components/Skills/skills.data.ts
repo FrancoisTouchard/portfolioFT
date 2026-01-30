@@ -1,100 +1,88 @@
-import React from 'react';
-import './Skills.css';
-import SkillCard from './card/component';
 import reactLogo from '../../assets/react.svg';
 import nodeLogo from '../../assets/nodejs.png';
 import postgresLogo from '../../assets/postgres.png';
 import javaLogo from '../../assets/java.png';
-import { SkillsCardProps } from './card/types';
+import { SkillProps } from './types';
 
-const hardSkills: SkillsCardProps[] = [
+export const SKILLS: SkillProps[] = [
   {
+    category: "HARD",
+    description: "desc",
     title: "React Native",
     logo: { src: reactLogo, alt: 'Logo React Native' },
+    slug: "react-native",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "HARD",
+    description: "desc",
     title: "React",
     logo: { src: reactLogo, alt: 'Logo React' },
+    slug: "react",
     tags: ["React", "Xx", "Yoooo"]
   },
   {
+    category: "HARD",
+    description: "desc",
     title: "Node.js",
     logo: { src: nodeLogo, alt: 'Logo Node.js' },
+    slug: "nodejs",
     tags: ["Node.js", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "HARD",
+    description: "desc",
     title: "Java",
     logo: { src: javaLogo, alt: 'Logo Java' },
+    slug: "java",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "HARD",
+    description: "desc",
     title: "PostgreSQL",
     logo: { src: postgresLogo, alt: 'Logo PostgreSQL' },
+    slug: "postgresql",
     tags: ["Communication", "Xx", "Yoooo", "lalala"]
   },
-];
-
-const softSkills: SkillsCardProps[] = [
   {
+    category: "SOFT",
+    description: "desc",
     title: "Communication",
     logo: { src: reactLogo, alt: 'Logo React' },
+    slug: "communication",
     tags: ["Communication", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "SOFT",
+    description: "desc",
     title: "Curiosité",
     logo: { src: reactLogo, alt: 'Logo React' },
+    slug: "curiosity",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "SOFT",
+    description: "desc",
     title: "Créativité",
     logo: { src: reactLogo, alt: 'Logo React' },
+    slug: "creativity",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "SOFT",
+    description: "desc",
     title: "Autonomie",
     logo: { src: reactLogo, alt: 'Logo React' },
+    slug: "independence",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    category: "SOFT",
+    description: "desc",
     title: "Rigueur",
     logo: { src: reactLogo, alt: 'Logo React' },
+    slug: "rigor",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
 ];
-
-
-const Skills = () => {
-
-  return (
-    <div className='skills-page-container'>
-      <h1 className="skills-page-title">Mes compétences</h1>
-      <h2 className="skills-subtitle">Techniques</h2>
-      <div className="skills-cards-container">
-        {hardSkills.map((skill) => {
-          return (
-            <SkillCard
-              title={skill.title}
-              logo={skill.logo}
-              tags={skill.tags}
-            />
-          );
-        })}
-      </div>
-      <h2 className="skills-subtitle">Humaines</h2>
-      <div className="skills-cards-container">
-        {softSkills.map((skill) => {
-          return (
-            <SkillCard
-              title={skill.title}
-              logo={skill.logo}
-              tags={skill.tags}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
-export default Skills;
