@@ -1,0 +1,51 @@
+.skills-page-container {
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.skills-page-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #f8fafc;
+  font-weight: 700;
+  padding: 8px;
+}
+
+.skills-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #f8fafc;
+  font-weight: 400;
+  text-decoration-line: underline;
+  padding: 8px;
+}
+
+.skills-cards-container {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .skills-page-title {
+    font-size: 2rem;
+  }
+
+  .skills-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-subtitle {
+    font-size: 1.5rem;
+  }
+
+}

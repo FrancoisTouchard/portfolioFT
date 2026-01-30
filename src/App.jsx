@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Home from './screens/Home/component';
-import Skills from './screens/Skills/component';
+import SkillsPage from './screens/Skills/component';
 import NavBar from './components/NavBar/component';
 import Work from './screens/Work/component';
 import Contact from './screens/Contact/component';
@@ -19,7 +19,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/skills" element={<SkillsPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />

@@ -1,14 +1,13 @@
 import React from "react";
 import PageView from "../../components/PageView/component";
+import Skills from "../../components/Skills/component";
 
-const Skills = () => {
+const SkillsPage = () => {
   return (
     <PageView>
-      <div>
-        <h1>Skills Page</h1>
-      </div>
+      <Skills />
     </PageView>
   )
 }
 
-export default Skills;
+export default SkillsPage;
