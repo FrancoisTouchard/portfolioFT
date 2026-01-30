@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/component';
 import Work from './screens/Work/component';
 import Contact from './screens/Contact/component';
 import About from './screens/About/component';
+import ExperienceDetailsPage from './screens/Experience/component';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/experiences/:experienceSlug" element={<ExperienceDetailsPage />} />
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/skills/:skillSlug" element={<SkillsDetailsPage />} />
           <Route path="/about" element={<About />} />

@@ -1,53 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
+
 import './Timeline.css';
 import TimelineCard from './card/component';
-import logoEdifice from '../../assets/logos/logo_edifice.png';
-import logoIscod from '../../assets/logos/logo_iscod.jpg';
-import logoPickme from '../../assets/logos/logo_pickme.png';
-import logoEpitech from '../../assets/logos/logo_epitech.png';
+import { EXPERIENCES } from '../Experience/experiences.data';
 
 const Timeline = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  const experiences = [
-    {
-      id: 1,
-      title: "Développeur Frontend Mobile",
-      company: "Édifice (en alternance)",
-      date: "02/09/2024 au 02/09/2026",
-      description: "Développement de la version application mobile (Android & iOS) de l'espace de travail numérique édité par Édifice. Alternance réalisée dans le cadre de la préparation de mon master à l'ISCOD.",
-      logo: { src: logoEdifice, alt: 'Logo Édifice' },
-      tags: ["React Native", "JavaScript", "TypeScript", "CSS", "Git"]
-    },
-    {
-      id: 2,
-      title: `Master "Expert Ingénierie du Logiciel"`,
-      company: "ISCOD",
-      date: "02/09/2024 au 02/09/2026",
-      description: "Préparation en 2 ans d'un Master visant à finaliser ma reconversion. J'ai suivi à l'ISCOD une formation généraliste de développeur full-stack web.",
-      logo: { src: logoIscod, alt: 'Logo ISCOD' },
-      tags: ["JavaScript", "TypeScript", "Java", "Kotlin", "Angular", "CSS"]
-    },
-    {
-      id: 3,
-      title: "Développeur Fullstack Mobile",
-      company: "Pickme (en stage)",
-      date: "xx/xx/202x",
-      description: "Pickme est une plateforme de livraison collaborative de particuliers qui réceptionnent les colis pour leurs voisins. Stage réalisé dans le cadre de la formation Coding Academy by Epitech.",
-      logo: { src: logoPickme, alt: 'Logo Pickme' },
-      tags: ["React Native", "Node.js", "PostgreSQL"]
-    },
-    {
-      id: 4,
-      title: "Formation Développeur Web",
-      company: "Coding Academy by Epitech",
-      date: "xx/xx/202x",
-      description: "Formation bootcamp de 6 mois sur les technologies web modernes et les bonnes pratiques de développement.",
-      logo: { src: logoEpitech, alt: 'Logo Epitech' },
-      tags: ["React", "React Native", "JavaScript", "Vue.js", "PHP", "HTML", "CSS", "Git", "Mongo DB", "SQL"]
-    }
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -74,12 +34,12 @@ const Timeline = () => {
 
   return (
     <div className="container">
-      <h1 className="mainTitle">Mon Parcours</h1>
+      <h1 className="main-title">Mon Parcours</h1>
 
       <div className="timeline">
-        <div className="timelineLine" />
+        <div className="timeline-line" />
 
-        {experiences.map((exp, index) => {
+        {EXPERIENCES.map((exp, index) => {
           const isLeft = index % 2 === 0;
           const isVisible = visibleItems.has(exp.id.toString());
 
@@ -89,23 +49,23 @@ const Timeline = () => {
               ref={(el) => {
                 itemRefs.current[index] = el;
               }} data-id={exp.id}
-              className={`timelineItem ${isLeft ? 'timelineItemLeft' : 'timelineItemRight'} ${isVisible ? 'timelineItemVisible' : 'timelineItemHidden'}`}
+              className={`timeline-item ${isLeft ? 'timeline-item-left' : 'timeline-item-right'} ${isVisible ? 'timeline-item-visible' : 'timeline-item-hidden'}`}
             >
 
-              <div className="timelineContent">
+              <Link className="timeline-content" to={`/experiences/${exp.slug}`}>
                 <TimelineCard
-                  title={exp.title}
                   company={exp.company}
                   description={exp.description}
                   logo={exp.logo}
-                  tags={exp.tags}
                   position={isLeft ? 'left' : 'right'}
+                  tags={exp.tags}
+                  title={exp.title}
                 />
-              </div>
+              </Link>
 
-              <div className="timelineMarker">
+              <div className="timeline-marker">
                 <div className="circle" />
-                <div className="dateLabel">{exp.date}</div>
+                <div className="date-label">{exp.date}</div>
               </div>
             </div>
           );

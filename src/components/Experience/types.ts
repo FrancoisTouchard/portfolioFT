@@ -1,8 +1,10 @@
-export interface TimelineCardProps {
+export interface ExperienceDetailsProps {
+  id: number;
   company: string;
+  date: string;
   description: string;
   logo: { src: string, alt: string }
-  position: 'left' | 'right';
+  slug: string;
   tags: string[];
   title: string;
 }
