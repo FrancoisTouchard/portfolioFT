@@ -97,24 +97,24 @@
     */
     margin-left: 48px;
     margin-right: 0;
+  }
+
+  .cardHeader {
     position: relative;
   }
 
+  /*
+  padding right + position absolute du logo = gestion des chevauchements titre/logo entre 360 et 420px
+  */
   .cardHeaderText {
-    margin-right: 40px;
-  }
-
-  .cardTitle {
-    font-size: 1.25rem;
-    word-wrap: break-word;
+    padding-right: 64px;
   }
 
   .companyLogo {
-    max-width: 60px;
-    max-height: 45px;
-    padding: 6px;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: -8px;
+    right: -8px;
+    max-width: 48px;
+    max-height: 36px;
   }
 }
