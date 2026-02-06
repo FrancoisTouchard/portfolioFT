@@ -1,11 +1,12 @@
 import reactLogo from '../../assets/react.svg';
-import nodeLogo from '../../assets/nodejs.png';
-import postgresLogo from '../../assets/postgres.png';
 import typescriptLogo from '../../assets/typescript.svg';
 import javascriptLogo from '../../assets/javascript.png';
-import nestjsLogo from '../../assets/nestjs.svg';
-import graphqlLogo from '../../assets/graphql.png';
-
+import uxIcon from '../../assets/icons/uxui.svg'
+import communicationIcon from '../../assets/icons/communication.svg'
+import creativityIcon from '../../assets/icons/creativity.svg'
+import organizationIcon from '../../assets/icons/organization.svg'
+import thinkingIcon from '../../assets/icons/critical-thinking.svg'
+import autonomyIcon from '../../assets/icons/autonomy.svg'
 
 import { SkillProps } from './types';
 
@@ -13,10 +14,10 @@ export const SKILLS: SkillProps[] = [
   {
     category: "HARD",
     description: "desc",
-    title: "React Native",
-    logo: { src: reactLogo, alt: 'Logo React Native' },
-    slug: "react-native",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    title: "JavaScript",
+    logo: { src: javascriptLogo, alt: 'Logo JavaScript' },
+    slug: "react",
+    tags: ["JavaScript", "Xx", "Yoooo"]
   },
   {
     category: "HARD",
@@ -29,6 +30,14 @@ export const SKILLS: SkillProps[] = [
   {
     category: "HARD",
     description: "desc",
+    title: "React Native",
+    logo: { src: reactLogo, alt: 'Logo React Native' },
+    slug: "react-native",
+    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+  },
+  {
+    category: "HARD",
+    description: "desc",
     title: "React",
     logo: { src: reactLogo, alt: 'Logo React' },
     slug: "react",
@@ -37,81 +46,49 @@ export const SKILLS: SkillProps[] = [
   {
     category: "HARD",
     description: "desc",
-    title: "JavaScript",
-    logo: { src: javascriptLogo, alt: 'Logo JavaScript' },
-    slug: "react",
-    tags: ["JavaScript", "Xx", "Yoooo"]
-  },
-  {
-    category: "HARD",
-    description: "desc",
-    title: "Node.js",
-    logo: { src: nodeLogo, alt: 'Logo Node.js' },
-    slug: "nodejs",
-    tags: ["Node.js", "Xx", "Yoooo", "lalala"]
-  },
-  {
-    category: "HARD",
-    description: "desc",
-    title: "Nest.js",
-    logo: { src: nestjsLogo, alt: 'Logo Nest.js' },
-    slug: "nestjs",
-    tags: ["Nest.js", "Xx", "Yoooo", "lalala"]
-  },
-  {
-    category: "HARD",
-    description: "desc",
-    title: "PostgreSQL",
-    logo: { src: postgresLogo, alt: 'Logo PostgreSQL' },
-    slug: "postgresql",
-    tags: ["Communication", "Xx", "Yoooo", "lalala"]
-  },
-  {
-    category: "HARD",
-    description: "desc",
-    title: "GraphQL",
-    logo: { src: graphqlLogo, alt: 'Logo GraphQL' },
-    slug: "graphql",
-    tags: ["Communication", "Xx", "Yoooo", "lalala"]
+    title: "UX/UI",
+    logo: { src: uxIcon, alt: 'Logo UX/UI' },
+    slug: "uxui",
+    tags: ["UX", "UI", "Yoooo", "lalala"]
   },
   {
     category: "SOFT",
     description: "desc",
     title: "Communication",
-    logo: { src: reactLogo, alt: 'Logo React' },
+    logo: { src: communicationIcon, alt: 'Icône Communication' },
     slug: "communication",
     tags: ["Communication", "Xx", "Yoooo", "lalala"]
   },
   {
     category: "SOFT",
     description: "desc",
-    title: "Curiosité",
-    logo: { src: reactLogo, alt: 'Logo React' },
-    slug: "curiosity",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
-  },
-  {
-    category: "SOFT",
-    description: "desc",
     title: "Créativité",
-    logo: { src: reactLogo, alt: 'Logo React' },
+    logo: { src: creativityIcon, alt: 'Icône Creativité' },
     slug: "creativity",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
     category: "SOFT",
     description: "desc",
+    title: "Esprit Critique",
+    logo: { src: thinkingIcon, alt: 'Icône Esprit Critique' },
+    slug: "critical-thinking",
+    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+  },
+  {
+    category: "SOFT",
+    description: "desc",
     title: "Autonomie",
-    logo: { src: reactLogo, alt: 'Logo React' },
+    logo: { src: autonomyIcon, alt: 'Icône Autonomie' },
     slug: "independence",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
     category: "SOFT",
     description: "desc",
-    title: "Rigueur",
-    logo: { src: reactLogo, alt: 'Logo React' },
-    slug: "rigor",
+    title: "Organisation",
+    logo: { src: organizationIcon, alt: 'Icône Organisation' },
+    slug: "organization",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
 ];
