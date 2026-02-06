@@ -7,6 +7,7 @@
   justify-content: center;
   z-index: 999;
   box-sizing: border-box;
+  font-family: 'Next Art';
 }
 
 .footer-description {
@@ -20,13 +21,13 @@
 
 .footer-description-name {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 4px;
 }
 
 .footer-description-job {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 1024px) {

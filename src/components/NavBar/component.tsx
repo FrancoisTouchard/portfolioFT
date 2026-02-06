@@ -25,7 +25,7 @@ const NavBar = () => {
     <nav className="NavBar">
       <div className="nav-description" onClick={() => navigate("/")}>
         <span className="nav-description-name">François Touchard</span>
-        <span className="nav-description-job">Développeur front-end</span>
+        <span className="nav-description-job">Développeur Frontend</span>
       </div>
       <div className="nav-links">
         <Link className={`nav-link ${isActive('/') ? 'active' : ''}`} to="/" onClick={closeMenu}>Accueil</Link>
@@ -42,10 +42,10 @@ const NavBar = () => {
       {
         isOpen && (
           <div className="mobile-menu">
-            <Link to="/" onClick={closeMenu}>Home</Link>
-            <Link to="/skills" onClick={closeMenu}>Skills</Link>
-            <Link to="/work" onClick={closeMenu}>Work</Link>
-            <Link to="/about" onClick={closeMenu}>About</Link>
+            <Link to="/" onClick={closeMenu}>Accueil</Link>
+            <Link to="/skills" onClick={closeMenu}>Compétences</Link>
+            <Link to="/work" onClick={closeMenu}>Réalisations</Link>
+            <Link to="/about" onClick={closeMenu}>À propos</Link>
             <Link to="/contact" onClick={closeMenu}>Contact</Link>
           </div>
         )

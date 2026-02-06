@@ -9,7 +9,7 @@ const Footer = () => {
     <nav className="footer">
       <div className="footer-description" onClick={() => navigate("/")}>
         <span className="footer-description-name">François Touchard</span>
-        <span className="footer-description-job">Développeur front-end</span>
+        <span className="footer-description-job">Développeur Frontend</span>
       </div>
     </nav >
   );
