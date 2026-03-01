@@ -7,18 +7,19 @@
 }
 
 .skills-page-title {
+  font-family: 'Next Art';
+  font-weight: 600;
   text-align: center;
   font-size: 3rem;
   color: #f8fafc;
-  font-weight: 700;
-  padding: 8px;
+  margin-top: 2%;
 }
 
 .skills-subtitle {
-  text-align: center;
-  font-size: 2rem;
-  color: #f8fafc;
+  font-family: 'Next Art';
   font-weight: 400;
+  text-align: center;
+  color: #f8fafc;
   text-decoration-line: underline;
   padding: 8px;
 }

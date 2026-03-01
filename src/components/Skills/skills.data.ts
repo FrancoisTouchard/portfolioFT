@@ -9,17 +9,20 @@ import thinkingIcon from '../../assets/icons/critical-thinking.svg'
 import autonomyIcon from '../../assets/icons/autonomy.svg'
 
 import { SkillProps } from './types';
+import { COMMITMENT_ARTICLE, COMMUNICATION_ARTICLE, CREATIVITY_ARTICLE, CRITICAL_THINKING_ARTICLE, JAVASCRIPT_ARTICLE, TYPESCRIPT_ARTICLE } from './skills.articles';
 
 export const SKILLS: SkillProps[] = [
   {
+    article: JAVASCRIPT_ARTICLE,
     category: "HARD",
     description: "desc",
     title: "JavaScript",
     logo: { src: javascriptLogo, alt: 'Logo JavaScript' },
-    slug: "react",
+    slug: "javascript",
     tags: ["JavaScript", "Xx", "Yoooo"]
   },
   {
+    article: TYPESCRIPT_ARTICLE,
     category: "HARD",
     description: "desc",
     title: "TypeScript",
@@ -28,6 +31,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["TypeScript", "Xx", "Yoooo", "lalala"]
   },
   {
+    article: { definition: "todo", experience: 'todo' },
     category: "HARD",
     description: "desc",
     title: "React Native",
@@ -36,6 +40,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    article: { definition: "todo", experience: 'todo' },
     category: "HARD",
     description: "desc",
     title: "React",
@@ -44,6 +49,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["React", "Xx", "Yoooo"]
   },
   {
+    article: { definition: "todo", experience: 'todo' },
     category: "HARD",
     description: "desc",
     title: "UX/UI",
@@ -52,6 +58,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["UX", "UI", "Yoooo", "lalala"]
   },
   {
+    article: COMMUNICATION_ARTICLE,
     category: "SOFT",
     description: "desc",
     title: "Communication",
@@ -60,14 +67,16 @@ export const SKILLS: SkillProps[] = [
     tags: ["Communication", "Xx", "Yoooo", "lalala"]
   },
   {
+    article: CREATIVITY_ARTICLE,
     category: "SOFT",
     description: "desc",
     title: "Créativité",
-    logo: { src: creativityIcon, alt: 'Icône Creativité' },
+    logo: { src: creativityIcon, alt: 'Icône Créativité' },
     slug: "creativity",
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    article: CRITICAL_THINKING_ARTICLE,
     category: "SOFT",
     description: "desc",
     title: "Esprit Critique",
@@ -76,14 +85,16 @@ export const SKILLS: SkillProps[] = [
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
+    article: COMMITMENT_ARTICLE,
     category: "SOFT",
     description: "desc",
-    title: "Autonomie",
+    title: "Implication",
     logo: { src: autonomyIcon, alt: 'Icône Autonomie' },
-    slug: "independence",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    slug: "commitment",
+    tags: ["Commitment"]
   },
   {
+    article: { definition: "todo", experience: 'todo' },
     category: "SOFT",
     description: "desc",
     title: "Organisation",

@@ -3,6 +3,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import React from "react";
 import { SKILLS } from '../skills.data';
 import './SkillDetails.css';
+import SkillArticle from '../article/component';
 
 
 const SkillDetails = () => {
@@ -15,11 +16,13 @@ const SkillDetails = () => {
   }
 
   return (
-    <section className='skills-details-section'>
-      <h1>{skill.title}</h1>
-      <img className='skills-details-logo' src={skill.logo.src} alt={skill.logo.alt} />
-      <p>{skill.description}</p>
-    </section>
+    <>
+      <section className='skills-details-section'>
+        <img className='skills-details-logo' src={skill.logo.src} alt={skill.logo.alt} />
+        <h1 className='skills-details-title' >{skill.title}</h1>
+      </section>
+      <SkillArticle article={skill.article} />
+    </>
   );
 }
 

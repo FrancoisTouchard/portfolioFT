@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  margin-top: 2rem;
 }
 
 .skills-details-logo {
@@ -15,4 +16,12 @@
   object-fit: contain;
   padding: 12px;
   width: 20%;
+}
+
+.skills-details-title {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-family: 'Next Art';
+  font-weight: 700;
+
 }
