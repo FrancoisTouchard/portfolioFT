@@ -23,5 +23,79 @@
   font-size: 3rem;
   font-family: 'Next Art';
   font-weight: 700;
+}
 
+.skills-article-section {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+}
+
+.skills-article-section a {
+  color: inherit;
+}
+
+.skills-article-subtitle {
+  margin-top: 4%;
+  font-family: 'Next Art';
+}
+
+#skills-associated-work {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.skill-tag {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+  .skills-details-section {
+    margin-top: 0.2rem;
+  }
+
+  .skills-details-logo {
+    padding: 4px;
+  }
+
+  .skills-details-title {
+    margin-top: 1.2rem;
+    font-size: 2rem;
+  }
+
+  .skills-article-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .skills-article-subtitle {
+    margin-top: 2rem;
+    font-family: 'Next Art';
+    font-size: 1.2rem;
+  }
+
+  #skills-associated-work {
+    margin-top: 12%;
+  }
+
+  .skill-tag {
+    padding: 4px 12px;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }

@@ -19,7 +19,7 @@ export const SKILLS: SkillProps[] = [
     title: "JavaScript",
     logo: { src: javascriptLogo, alt: 'Logo JavaScript' },
     slug: "javascript",
-    tags: ["JavaScript", "Xx", "Yoooo"]
+    tags: ["Carrousel Multimédia", "Cours & Wiki", "Indigo Project", "My Gif Library", "Pickme X HelloMyBot"]
   },
   {
     article: TYPESCRIPT_ARTICLE,
