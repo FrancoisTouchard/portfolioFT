@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   padding: 20px;
-  background-color: #0f172a;
+  margin-top: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,6 @@
 }
 
 .footer-description {
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +20,12 @@
 
 .footer-description-name {
   font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .footer-description-job {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {
@@ -38,6 +36,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .footer {
+    margin-top: 1rem;
+    padding: 12px;
+  }
 
   .footer-description-name {
     font-size: 18px;
