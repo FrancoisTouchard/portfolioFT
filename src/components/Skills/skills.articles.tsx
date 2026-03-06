@@ -29,7 +29,7 @@ export const COMMUNICATION_ARTICLE = {
     </>
   ),
 
-  experience: (
+  proofs: (
     <>
       <p>
         Avoir eu un précédent métier où la communication jouait un rôle central m’aide énormément au quotidien en tant que développeur.
@@ -60,7 +60,9 @@ export const COMMUNICATION_ARTICLE = {
       </p>
 
     </>
-  )
+  ),
+  criticism: (<></>),
+  evolution: (<></>)
 };
 
 export const CREATIVITY_ARTICLE = {
@@ -88,7 +90,7 @@ export const CREATIVITY_ARTICLE = {
     </>
   ),
 
-  experience: (
+  proofs: (
     <>
       <p>
         Je ne pratique aucune activité artistique visuelle (j’ai préféré la musique). Cependant, j’ai toujours eu beaucoup d’intérêt pour les arts picturaux et le design d’une manière générale. Je pense disposer du minimum de sensibilité requis, et d’un regard qui me permet de <b>repérer des défauts ou des optimisations possibles dès le premier coup d’oeil</b> sur une interface utilisateur.
@@ -126,7 +128,9 @@ export const CREATIVITY_ARTICLE = {
         Plutôt que de chercher un fix à ce bug complexe, j’ai tout simplement choisi de ne pas utiliser le carrousel pour ce cas spécifique où il n’y a qu’une seule ressource à visionner, je rendais directement mon composant permettant de visionner les pdf. N’ayant qu’une seule ressource à visionner, il n’était pas nécessaire d’embarquer les contraintes liées au swipe et à la consultation circulaire des médias.
       </p>
     </>
-  )
+  ),
+  criticism: (<></>),
+  evolution: (<></>)
 }
 
 export const COMMITMENT_ARTICLE = {
@@ -141,7 +145,7 @@ export const COMMITMENT_ARTICLE = {
       </p>
     </>
   ),
-  experience: (
+  proofs: (
     <>
       <p>
         Impossible pour moi d’illustrer cette qualité d’implication sans parler du fait que le métier de développeur est le fruit de ma reconversion professionnelle.
@@ -183,7 +187,9 @@ export const COMMITMENT_ARTICLE = {
         Quand je vois le résultat auquel j’ai abouti, qui est beaucoup plus poussé que ce qui était prévu à la base, je trouve que c’est une bonne démonstration de la rigueur et de l’implication que j’ai pu consacrer à ce projet, là où un développeur moins consciencieux aurait pu se contenter de développer simplement ce qui était prévu.
       </p>
     </>
-  )
+  ),
+  criticism: (<></>),
+  evolution: (<></>)
 }
 
 
@@ -207,7 +213,7 @@ export const CRITICAL_THINKING_ARTICLE = {
       </p>
     </>
   ),
-  experience: (
+  proofs: (
     <>
       <p>
         Avoir fait une reconversion professionnelle à 30 ans vers un métier technique favorise le développement de l’esprit critique. Recommencer un parcours professionnel avec un statut de débutant implique aussi de savoir <b>rester humble</b>, car dans un métier technique comme celui de développeur, on est souvent amené à se tromper.
@@ -237,7 +243,9 @@ export const CRITICAL_THINKING_ARTICLE = {
         Je pense qu’on doit développer l’esprit critique tout au long de sa vie, <b>et surtout l'entretenir</b>, c’est une bonne habitude à prendre et à conserver.
       </p>
     </>
-  )
+  ),
+  criticism: (<></>),
+  evolution: (<></>)
 }
 
 export const JAVASCRIPT_ARTICLE = {
@@ -248,19 +256,19 @@ export const JAVASCRIPT_ARTICLE = {
       </p>
 
       <p>
-        C’est la <b>brique de base</b> pour la construction de toute interface graphique sur le web et le point de départ de nombreux développeurs.
+        C’est la <b>brique de base</b> pour la construction de toute interface graphique sur le web. JavaScript est la source de tous les frameworks utilisés en programmation frontend web, tels que React, Vue ou Angular.
       </p>
 
       <p>
-        Aujourd’hui, JavaScript est la source de tous les frameworks utilisés en programmation frontend web, tels que React, Vue ou Angular.
+        C’est donc un langage extrêmement répandu, qui est souvent le point de départ en programmation pour de nombreux développeurs. Selon <a href='https://www.statista.com/statistics/793628/worldwide-developer-survey-most-used-languages/' target='_blank'>ce rapport</a> Statista, c’est tout simplement le langage le plus utilisé à l’échelle mondiale en 2025 : <b>66% des développeurs le pratiquent</b>.
       </p>
     </>
   ),
 
-  experience: (
+  proofs: (
     <>
       <p>
-        C’est avec JavaScript que j’ai commencé la programmation et créé mes premières variables et fonctions. C’est avec ce langage que j’ai découvert les outils que j’utilise à présent tous les jours : les conditions, les boucles, la manipulation de tableaux et celle du DOM, le fetch de données, la gestion d’erreur ou encore l’émission et l’écoute d’événements.
+        C’est avec JavaScript que j’ai commencé la programmation et créé mes premières variables et fonctions. C’est avec ce langage que j’ai découvert les outils que j’utilise à présent tous les jours : les conditions, les boucles, la manipulation des objets et celle du DOM, le fetch de données, la gestion d’erreur ou encore l’émission et l’écoute d’événements.
       </p>
 
       <p>
@@ -276,7 +284,7 @@ export const JAVASCRIPT_ARTICLE = {
       </p>
 
       <p>
-        Je pense avoir de bonnes bases en JavaScript, tout en ayant toujours beaucoup à apprendre. À titre d’exemple, lors de mon expérience chez Édifice, j’ai du résoudre un bug présent en production qui m’a amené à comprendre et débugger du code que je n’ai pas moi même créé.
+        À titre d’exemple, lors de mon expérience chez <i>Édifice</i>, j’ai du résoudre un bug présent en production qui m’a amené à comprendre et débugger du code que je n’ai pas moi même créé.
       </p>
 
       <p>
@@ -284,15 +292,53 @@ export const JAVASCRIPT_ARTICLE = {
       </p>
 
       <p>
-        J’ai pu résoudre ce bug en me rendant compte que les requêtes API de création de post/message étaient refusées pour un défaut d’authenthification : il manquait dans les headers un cookie oneSessionId. J’ai donc retracé le parcours des données depuis le login jusqu’à la création d’un contenu pour m’apercevoir qu’il manquait dans le flux applicatif un appel à une méthode permettant de rafraîchir ce cookie.
+        J’ai pu résoudre ce bug en me rendant compte que les requêtes API de création de post/message étaient refusées pour un défaut d’authentification : il manquait dans les headers un cookie oneSessionId. J’ai donc retracé le parcours des données depuis le login jusqu’à la création d’un contenu pour m’apercevoir qu’il manquait dans le flux applicatif un appel à une méthode permettant de rafraîchir ce cookie.
       </p>
 
       <p>
-        Les connaissances que j’ai acquises m’ont permis de comprendre et débugger rapidement un code dont je ne suis pas l’auteur. Je sais que des situations similaires et plus complexes se présenteront à l’avenir, et pour c’est pour cela que je m’applique à <b>challenger mon propre code</b> et à <b>apprendre régulièrement</b> de nouvelles façons de résoudre des problèmes.
+        Les connaissances que j’ai acquises m’ont permis de comprendre et débugger rapidement un code dont je n'étais pas l’auteur. Je sais que des situations similaires et plus complexes se présenteront à l’avenir, et pour c’est pour cela que je m’applique à <b>challenger mon propre code</b> et à <b>apprendre régulièrement</b> de nouvelles façons de résoudre des problèmes.
       </p>
 
       <p>
         Ce genre d’expérience m’a montré que la maîtrise du JavaScript est essentielle pour aborder ce métier avec sérénité.
+      </p>
+    </>
+  ),
+  criticism: (
+    <>
+      <p>
+        Je considère aujourd’hui avoir acquis de bonnes bases en JavaScript, tout en étant conscient qu’il s’agit d’un langage extrêmement vaste <b>dont la maîtrise demande du temps et de la pratique</b>.
+      </p>
+
+      <p>
+        Dans mon métier actuel de développeur d’applications mobiles, JavaScript occupe une place centrale puisque c’est le langage sur lequel repose le framework React Native avec lequel je travaille quotidiennement. La qualité et la performance du code JavaScript ont donc un impact direct sur l’expérience utilisateur, ce qui rend cette compétence particulièrement importante dans mon profil professionnel.
+      </p>
+
+      <p>
+        Avec le recul, je perçois JavaScript comme un apprentissage continu : chaque semaine je rencontre de nouvelles situations qui m’amènent à approfondir certains concepts ou à découvrir de nouvelles façons de résoudre un problème. Cette réalité me pousse à adopter une posture de remise en question régulière de mon code.
+      </p>
+
+      <p>
+        Pour progresser dans ce domaine, il me semble essentiel de conserver une démarche active d’analyse et de compréhension du fonctionnement du langage. Je pense également qu’ <b>un développeur ne doit pas se contenter de produire un code fonctionnel, mais chercher à comprendre ses implications</b> en termes de lisibilité, de maintenabilité et de performance.
+      </p>
+    </>
+  ),
+  evolution: (
+    <>
+      <p>
+        À moyen terme, je souhaite approfondir mes compétences en JavaScript sur deux axes principaux : <b>l’algorithmie et la maîtrise de l’écosystème du langage</b>.
+      </p>
+
+      <p>
+        Le premier axe concerne ma capacité à <b>traduire efficacement des raisonnements algorithmiques</b> en JavaScript, en appliquant les <b>bonnes pratiques</b> de développement tout en restant attentif à la <b>performance d’exécution</b> du code. Cela implique notamment d’améliorer ma maîtrise des méthodes de manipulation de tableaux ainsi que des différents types d’objets manipulés dans le langage.
+      </p>
+
+      <p>
+        Le second axe concerne l’approfondissement de ma connaissance des outils et des API disponibles. Pour cela, je m’appuie notamment sur la documentation du Mozilla Developer Network (MDN), qui constitue une référence pour JavaScript. J’y consulte régulièrement des exemples et des cas d’usage que je prends le temps d’expérimenter dans mes projets personnels ou professionnels.
+      </p>
+
+      <p>
+        Je m’efforce également de rester attentif à <b>l’évolution de l’écosystème JavaScript</b>, notamment à travers les librairies tierces et les nouvelles pratiques de développement. Cette veille technique me permet progressivement d’enrichir mes méthodes de travail et d’améliorer la qualité du code que je produis.
       </p>
     </>
   )
@@ -315,7 +361,7 @@ export const TYPESCRIPT_ARTICLE = {
     </>
   ),
 
-  experience: (
+  proofs: (
     <>
       <p>
         Aujourd’hui, TypeScript est devenu un standard industriel et sa maîtrise est requise sur la majorité des offres d’emploi.
@@ -357,6 +403,8 @@ export const TYPESCRIPT_ARTICLE = {
         Lorsqu’il n’était pas possible de faire modifier le code backend, j’ai du trouver des solutions pour me débrouiller avec ce qui existait tout en préservant la cohérence du typage, ce qui a renforcé ma faculté d’adaptation et ma capacité à me sortir de contextes très contraignants.
       </p>
     </>
-  )
+  ),
+  criticism: (<></>),
+  evolution: (<></>)
 };
 

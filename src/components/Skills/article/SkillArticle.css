@@ -11,4 +11,9 @@
 
 #skills-associated-work {
   text-align: center;
+  margin-top: 8%;
+}
+
+.skills-article-section a {
+  color: inherit;
 }

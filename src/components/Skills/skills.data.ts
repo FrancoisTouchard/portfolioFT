@@ -31,7 +31,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["TypeScript", "Xx", "Yoooo", "lalala"]
   },
   {
-    article: { definition: "todo", experience: 'todo' },
+    article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
     category: "HARD",
     description: "desc",
     title: "React Native",
@@ -40,7 +40,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["React Native", "Xx", "Yoooo", "lalala"]
   },
   {
-    article: { definition: "todo", experience: 'todo' },
+    article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
     category: "HARD",
     description: "desc",
     title: "React",
@@ -49,7 +49,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["React", "Xx", "Yoooo"]
   },
   {
-    article: { definition: "todo", experience: 'todo' },
+    article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
     category: "HARD",
     description: "desc",
     title: "UX/UI",
@@ -94,7 +94,7 @@ export const SKILLS: SkillProps[] = [
     tags: ["Commitment"]
   },
   {
-    article: { definition: "todo", experience: 'todo' },
+    article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
     category: "SOFT",
     description: "desc",
     title: "Organisation",
