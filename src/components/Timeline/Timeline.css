@@ -1,15 +1,16 @@
 .container {
   background-color: #0f172a;
-  padding: 60px 20px;
+  padding: 0px 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .main-title {
   text-align: center;
-  font-size: 3rem;
+  margin-bottom: 4rem;
+  font-family: 'Next Art';
+  font-weight: 600;
+  font-size: 2.4rem;
   color: #f8fafc;
-  margin-bottom: 60px;
-  font-weight: 700;
 }
 
 .timeline {
@@ -101,6 +102,7 @@
 @media (max-width: 768px) {
   .main-title {
     font-size: 2rem;
+    margin-top: 2rem;
   }
 
   .timeline-item-left,

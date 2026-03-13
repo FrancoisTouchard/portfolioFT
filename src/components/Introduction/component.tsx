@@ -14,7 +14,7 @@ export default function Introduction() {
       </div >
       <div className="square">
         <div className="inner-square">
-          <span className='text-job'>Développeur front-end</span>
+          <span className='text-job'>Développeur frontend</span>
         </div>
       </div >
     </div>

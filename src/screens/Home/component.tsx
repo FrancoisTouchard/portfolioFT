@@ -13,8 +13,6 @@ const Home = () => {
         <div className="intro-container">
           <Introduction />
         </div>
-        {/* <h1>Home Page</h1>
-        <button onClick={() => navigate("/skills")}>Go to skills</button> */}
         <Timeline />
       </div>
     </PageView>
