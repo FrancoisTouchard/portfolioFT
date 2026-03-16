@@ -1,0 +1,35 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+
+import './Works.css';
+import { WORKS_SYNTHETIC } from './works.data';
+import WorksCard from './synthetic/component';
+
+const Works = () => {
+
+  return (
+    <div className='works-page-container'>
+      <h1 className="works-page-title">Mes réalisations</h1>
+      <div className='works-cards-container'>
+        {WORKS_SYNTHETIC.map((work) => {
+          return (
+            <div
+              key={work.id}
+              className="works-card-item"
+            >
+              <Link className="works-card-content" to={`/works/${work.slug}`}>
+                <WorksCard
+                  description={work.description}
+                  illustration={work.illustration}
+                  title={work.title}
+                />
+              </Link>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Works;

@@ -1,0 +1,34 @@
+.works-page-container {
+  background-color: #0f172a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.works-page-title {
+  font-family: 'Next Art';
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #f8fafc;
+  margin-top: 1.4rem;
+}
+
+.works-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.works-card-content {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .works-page-title {
+    font-size: 2rem;
+  }
+
+}

@@ -30,7 +30,7 @@ const NavBar = () => {
       <div className="nav-links">
         <Link className={`nav-link ${isActive('/') ? 'active' : ''}`} to="/" onClick={closeMenu}>Accueil</Link>
         <Link className={`nav-link ${isActive('/skills') ? 'active' : ''}`} to="/skills" onClick={closeMenu}>Compétences</Link>
-        <Link className={`nav-link ${isActive('/work') ? 'active' : ''}`} to="/work" onClick={closeMenu}>Réalisations</Link>
+        <Link className={`nav-link ${isActive('/work') ? 'active' : ''}`} to="/works" onClick={closeMenu}>Réalisations</Link>
         <Link className={`nav-link ${isActive('/about') ? 'active' : ''}`} to="/about" onClick={closeMenu}>À propos</Link>
         <Link className={`nav-link ${isActive('/contact') ? 'active' : ''}`} to="/contact" onClick={closeMenu}>Contact</Link>
       </div>
@@ -44,7 +44,7 @@ const NavBar = () => {
           <div className="mobile-menu">
             <Link to="/" onClick={closeMenu}>Accueil</Link>
             <Link to="/skills" onClick={closeMenu}>Compétences</Link>
-            <Link to="/work" onClick={closeMenu}>Réalisations</Link>
+            <Link to="/works" onClick={closeMenu}>Réalisations</Link>
             <Link to="/about" onClick={closeMenu}>À propos</Link>
             <Link to="/contact" onClick={closeMenu}>Contact</Link>
           </div>
