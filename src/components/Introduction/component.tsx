@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Introduction.css'
-import profilePic from '../../assets/yuji.jpg';
+import profilePic from '../../assets/photoFT.jpg';
 
 
 export default function Introduction() {
