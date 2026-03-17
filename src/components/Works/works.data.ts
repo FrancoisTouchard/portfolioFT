@@ -5,11 +5,13 @@ import myGifLibrary from "../../assets/works/myGifLibrary.png"
 import indigoProject from "../../assets/works/indigoProject.jpg"
 
 
-import { WorksDetailsProps } from "./types";
+import { WorkProps } from "./types";
+import { CARROUSEL_ARTICLE } from "./works.article"
 
-export const WORKS_SYNTHETIC: WorksDetailsProps[] = [
+export const WORKS: WorkProps[] = [
   {
     id: 1,
+    article: CARROUSEL_ARTICLE,
     description: "Implémentation d’un composant permettant la consultation d’images, vidéos, audio et fichiers dans un unique carrousel avec les fonctionnalités de swipe, zoom et de pagination.",
     illustration: { src: carrousel, alt: "Illustration du Carrousel Multimédia" },
     slug: "multimedia-carrousel",
@@ -18,6 +20,7 @@ export const WORKS_SYNTHETIC: WorksDetailsProps[] = [
   },
   {
     id: 2,
+    article: CARROUSEL_ARTICLE,
     description: "Création d’un module applicatif offrant la possibilité aux enseignants de poster leurs cours au format wiki afin que les élèves puissent y accéder facilement et depuis n’importe où.",
     illustration: { src: coursEtWiki, alt: "Illustration du module Cours & Wiki" },
     slug: "wiki",
@@ -26,6 +29,7 @@ export const WORKS_SYNTHETIC: WorksDetailsProps[] = [
   },
   {
     id: 3,
+    article: CARROUSEL_ARTICLE,
     description: "Intégration du chatbot HelloMyBot dans l’application mobile Pickme. Cette solution consistait à guider les utilisateurs vers un chatbot afin de leur fournir des réponses aux questions courantes.",
     illustration: { src: helloMyBot, alt: "Illustration du chatbot" },
     slug: "chatbot",
@@ -34,6 +38,7 @@ export const WORKS_SYNTHETIC: WorksDetailsProps[] = [
   },
   {
     id: 4,
+    article: CARROUSEL_ARTICLE,
     description: "Projet personnel visant à améliorer ma maîtrise des interactions tactiles et des animations en React Native. Il s’agit d’une reproduction d’un niveau du jeu Pokémon, codé en TypeScript et JavaScript.",
     illustration: { src: indigoProject, alt: "Illustration Indigo Project" },
     slug: "indigo-project",
@@ -42,6 +47,7 @@ export const WORKS_SYNTHETIC: WorksDetailsProps[] = [
   },
   {
     id: 5,
+    article: CARROUSEL_ARTICLE,
     description: "SPA React permettant à l’utilisateur de rechercher des gifs via l’API de Giphy et de les organiser par catégorie afin de pouvoir accéder rapidement à ses gifs favoris.",
     illustration: { src: myGifLibrary, alt: "Illustration de l'application MyGifLibrary" },
     slug: "mygiflibrary",

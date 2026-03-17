@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import './Works.css';
-import { WORKS_SYNTHETIC } from './works.data';
+import { WORKS } from './works.data';
 import WorksCard from './synthetic/component';
 
 const Works = () => {
@@ -11,7 +11,7 @@ const Works = () => {
     <div className='works-page-container'>
       <h1 className="works-page-title">Mes réalisations</h1>
       <div className='works-cards-container'>
-        {WORKS_SYNTHETIC.map((work) => {
+        {WORKS.map((work) => {
           return (
             <div
               key={work.id}

@@ -4,12 +4,13 @@ import Home from './screens/Home/component';
 import SkillsPage from './screens/Skills/synthetic/component';
 import SkillsDetailsPage from './screens/Skills/details/component';
 import NavBar from './components/NavBar/component';
-import Works from './screens/Work/component';
+import Works from './screens/Work/synthetic/component';
 import Contact from './screens/Contact/component';
 import About from './screens/About/component';
 import ExperienceDetailsPage from './screens/Experience/component';
 import Footer from './components/Footer/component';
 import ScrollToTop from './components/ScrollToTop/component';
+import WorkDetailsPage from './screens/Work/details/component';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/skills/:skillSlug" element={<SkillsDetailsPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/works" element={<Works />} />
+              <Route path="/works/:workSlug" element={<WorkDetailsPage />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
