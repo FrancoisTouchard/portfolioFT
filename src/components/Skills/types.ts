@@ -4,6 +4,6 @@ export interface SkillProps {
   description: string;
   logo: { src: string, alt: string }
   slug: string;
-  tags: string[];
+  tags: { displayName: string, linkName: string }[];
   title: string;
 }

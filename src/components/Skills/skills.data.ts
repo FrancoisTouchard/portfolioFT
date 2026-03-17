@@ -11,6 +11,14 @@ import autonomyIcon from '../../assets/icons/autonomy.svg'
 import { SkillProps } from './types';
 import { COMMITMENT_ARTICLE, COMMUNICATION_ARTICLE, CREATIVITY_ARTICLE, CRITICAL_THINKING_ARTICLE, JAVASCRIPT_ARTICLE, TYPESCRIPT_ARTICLE } from './skills.articles';
 
+const WORK_TAGS = {
+  carrousel: { displayName: "Carrousel Multimédia", linkName: "multimedia-carrousel" },
+  wiki: { displayName: "Cours & Wiki", linkName: "wiki" },
+  indigo: { displayName: "Indigo Project", linkName: "indigo-project" },
+  myGifLibrary: { displayName: "My Gif Library", linkName: "mygiflibrary" },
+  chatbot: { displayName: "Pickme & HelloMyBot", linkName: "chatbot" },
+}
+
 export const SKILLS: SkillProps[] = [
   {
     article: JAVASCRIPT_ARTICLE,
@@ -19,7 +27,7 @@ export const SKILLS: SkillProps[] = [
     title: "JavaScript",
     logo: { src: javascriptLogo, alt: 'Logo JavaScript' },
     slug: "javascript",
-    tags: ["Carrousel Multimédia", "Cours & Wiki", "Indigo Project", "My Gif Library", "Pickme X HelloMyBot"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary, WORK_TAGS.chatbot]
   },
   {
     article: TYPESCRIPT_ARTICLE,
@@ -28,7 +36,7 @@ export const SKILLS: SkillProps[] = [
     title: "TypeScript",
     logo: { src: typescriptLogo, alt: 'Logo TypeScript' },
     slug: "typescript",
-    tags: ["TypeScript", "Xx", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.chatbot]
   },
   {
     article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
@@ -37,7 +45,7 @@ export const SKILLS: SkillProps[] = [
     title: "React Native",
     logo: { src: reactLogo, alt: 'Logo React Native' },
     slug: "react-native",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.chatbot]
   },
   {
     article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
@@ -46,7 +54,7 @@ export const SKILLS: SkillProps[] = [
     title: "React",
     logo: { src: reactLogo, alt: 'Logo React' },
     slug: "react",
-    tags: ["React", "Xx", "Yoooo"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary, WORK_TAGS.chatbot]
   },
   {
     article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
@@ -55,7 +63,7 @@ export const SKILLS: SkillProps[] = [
     title: "UX/UI",
     logo: { src: uxIcon, alt: 'Logo UX/UI' },
     slug: "uxui",
-    tags: ["UX", "UI", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki]
   },
   {
     article: COMMUNICATION_ARTICLE,
@@ -64,7 +72,7 @@ export const SKILLS: SkillProps[] = [
     title: "Communication",
     logo: { src: communicationIcon, alt: 'Icône Communication' },
     slug: "communication",
-    tags: ["Communication", "Xx", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary, WORK_TAGS.chatbot]
   },
   {
     article: CREATIVITY_ARTICLE,
@@ -73,7 +81,7 @@ export const SKILLS: SkillProps[] = [
     title: "Créativité",
     logo: { src: creativityIcon, alt: 'Icône Créativité' },
     slug: "creativity",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary]
   },
   {
     article: CRITICAL_THINKING_ARTICLE,
@@ -82,7 +90,7 @@ export const SKILLS: SkillProps[] = [
     title: "Esprit Critique",
     logo: { src: thinkingIcon, alt: 'Icône Esprit Critique' },
     slug: "critical-thinking",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary]
   },
   {
     article: COMMITMENT_ARTICLE,
@@ -91,7 +99,7 @@ export const SKILLS: SkillProps[] = [
     title: "Implication",
     logo: { src: autonomyIcon, alt: 'Icône Autonomie' },
     slug: "commitment",
-    tags: ["Commitment"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary]
   },
   {
     article: { definition: "todo", proofs: 'todo', criticism: 'todo', evolution: 'todo' },
@@ -100,6 +108,6 @@ export const SKILLS: SkillProps[] = [
     title: "Organisation",
     logo: { src: organizationIcon, alt: 'Icône Organisation' },
     slug: "organization",
-    tags: ["React Native", "Xx", "Yoooo", "lalala"]
+    tags: [WORK_TAGS.carrousel, WORK_TAGS.wiki, WORK_TAGS.indigo, WORK_TAGS.myGifLibrary]
   },
 ];

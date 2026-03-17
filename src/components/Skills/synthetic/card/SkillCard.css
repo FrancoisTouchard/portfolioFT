@@ -30,7 +30,7 @@
   width: 50%;
 }
 
-.skills-cardTitle {
+.skills-card-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #f8fafc;
@@ -39,31 +39,15 @@
   margin-bottom: 8px;
 }
 
-.skills-tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  justify-content: center;
-}
-
-.skills-tag {
-  background-color: #3b82f6;
-  border-radius: 16px;
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 4px 12px;
-}
-
 @media (max-width: 768px) {
-
-  .skills-cardTitle {
-    font-size: 1.25rem;
-    word-wrap: break-word;
-  }
 
   .skills-card {
     min-height: 240px;
+  }
+
+  .skills-card-title {
+    font-size: 1.25rem;
+    word-wrap: break-word;
   }
 
 }

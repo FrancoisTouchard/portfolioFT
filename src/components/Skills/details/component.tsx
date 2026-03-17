@@ -1,4 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import React from "react";
 import { SKILLS } from '../skills.data';
@@ -30,11 +31,13 @@ const SkillDetails = () => {
         <h2 className="skills-article-subtitle">Mon évolution dans cette compétence</h2>
         {skill.article.evolution}
         <h2 className="skills-article-subtitle" id="skills-associated-work">Réalisations associées</h2>
-        <div className="skill-tags">
+        <div className="skills-tags-container">
           {skill.tags.map((tag, index) => (
-            <span key={index} className="skill-tag">
-              {tag}
-            </span>
+            <Link key={index} to={`/works/${tag.linkName}`}>
+              <span className="skill-tag">
+                {tag.displayName}
+              </span>
+            </Link>
           ))}
         </div>
       </section>

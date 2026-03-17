@@ -19,7 +19,6 @@ const Skills = () => {
               title={skill.title}
               logo={skill.logo}
               slug={skill.slug}
-              tags={skill.tags}
             />
           );
         })}
@@ -32,7 +31,6 @@ const Skills = () => {
               title={skill.title}
               logo={skill.logo}
               slug={skill.slug}
-              tags={skill.tags}
             />
           );
         })}

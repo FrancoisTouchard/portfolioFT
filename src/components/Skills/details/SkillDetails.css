@@ -45,12 +45,16 @@
   margin-top: 8%;
 }
 
-.skill-tags {
+.skills-tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
   margin-top: 24px;
+}
+
+.skills-tags-container a {
+  text-decoration: none;
 }
 
 .skill-tag {
@@ -94,8 +98,7 @@
 
   .skill-tag {
     padding: 4px 12px;
-    border-radius: 24px;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+
   }
 }
