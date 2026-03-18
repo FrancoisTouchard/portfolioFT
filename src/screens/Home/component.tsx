@@ -1,12 +1,13 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import './Home.css'
-import PageView from "../../components/PageView/component";
-import Timeline from "../../components/Timeline/component";
-import Introduction from "../../components/Introduction/component";
+import './Home.css';
+
+import React from 'react';
+
+import Introduction from '../../components/Introduction/component';
+import PageView from '../../components/PageView/component';
+import PreviousLife from '../../components/PreviousLife/component';
+import Timeline from '../../components/Timeline/component';
 
 const Home = () => {
-  const navigate = useNavigate();
   return (
     <PageView>
       <div className="home-container">
@@ -14,9 +15,10 @@ const Home = () => {
           <Introduction />
         </div>
         <Timeline />
+        <PreviousLife />
       </div>
     </PageView>
-  )
-}
+  );
+};
 
 export default Home;
