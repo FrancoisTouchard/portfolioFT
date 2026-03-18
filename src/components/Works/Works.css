@@ -11,19 +11,30 @@
   font-weight: 600;
   font-size: 2.4rem;
   color: #f8fafc;
-  margin-top: 1.4rem;
+  margin-top: 2vh;
 }
 
 .works-cards-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
-  gap: 2rem;
+  margin-top: 4vh;
+  gap: 32px;
+  padding-left: 6%;
+  padding-right: 6%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.works-card-content {
+.works-card-item {
+  display: flex;
+  width: 22rem;
+}
+
+.works-card-link {
   text-decoration: none;
+  height: 100%;
+  display: flex;
 }
 
 @media (max-width: 768px) {

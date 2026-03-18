@@ -17,7 +17,7 @@ const Works = () => {
               key={work.id}
               className="works-card-item"
             >
-              <Link className="works-card-content" to={`/works/${work.slug}`}>
+              <Link className="works-card-link" to={`/works/${work.slug}`}>
                 <WorksCard
                   description={work.description}
                   illustration={work.illustration}
