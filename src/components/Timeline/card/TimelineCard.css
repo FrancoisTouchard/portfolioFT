@@ -80,7 +80,7 @@
 }
 
 .tag {
-  background-color: #3b82f6;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
   color: #ffffff;
   padding: 4px 12px;
   border-radius: 16px;
