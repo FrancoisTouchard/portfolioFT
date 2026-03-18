@@ -23,6 +23,33 @@
   font-family: 'Next Art';
 }
 
+#works-associated-work {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.works-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.works-tags-container a {
+  text-decoration: none;
+}
+
+.works-tag {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
 @media (max-width: 768px) {
 
   .works-details-header {
@@ -43,6 +70,15 @@
   .works-details-article-subtitle {
     margin-top: 2rem;
     font-size: 1.2rem;
+  }
+
+  #works-associated-work {
+    margin-top: 12%;
+  }
+
+  .works-tag {
+    padding: 4px 12px;
+    font-size: 0.9rem;
   }
 
 }

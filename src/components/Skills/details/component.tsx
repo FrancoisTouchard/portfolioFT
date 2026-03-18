@@ -1,7 +1,6 @@
-import { useParams, Navigate } from 'react-router-dom';
-import { Link } from "react-router-dom";
-
 import React from "react";
+import { useParams, Link, Navigate } from 'react-router-dom';
+
 import { SKILLS } from '../skills.data';
 import './SkillDetails.css';
 

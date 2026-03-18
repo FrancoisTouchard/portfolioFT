@@ -4,6 +4,6 @@ export interface WorkProps {
   description: string;
   illustration: { src: string, alt: string }
   slug: string;
-  tags: string[];
+  tags: { displayName: string, linkName: string }[];
   title: string;
 }
