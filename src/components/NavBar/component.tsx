@@ -30,7 +30,7 @@ const NavBar = () => {
       <div className="nav-links">
         <Link className={`nav-link ${isActive('/') ? 'active' : ''}`} to="/" onClick={closeMenu}>Accueil</Link>
         <Link className={`nav-link ${isActive('/skills') ? 'active' : ''}`} to="/skills" onClick={closeMenu}>Compétences</Link>
-        <Link className={`nav-link ${isActive('/work') ? 'active' : ''}`} to="/works" onClick={closeMenu}>Réalisations</Link>
+        <Link className={`nav-link ${isActive('/works') ? 'active' : ''}`} to="/works" onClick={closeMenu}>Réalisations</Link>
         <Link className={`nav-link ${isActive('/about') ? 'active' : ''}`} to="/about" onClick={closeMenu}>À propos</Link>
         <Link className={`nav-link ${isActive('/contact') ? 'active' : ''}`} to="/contact" onClick={closeMenu}>Contact</Link>
       </div>
