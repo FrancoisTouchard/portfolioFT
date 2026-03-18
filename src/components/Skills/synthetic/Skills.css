@@ -11,7 +11,7 @@
   font-weight: 600;
   font-size: 2.4rem;
   color: #f8fafc;
-  margin-top: 1.4rem;
+  margin-bottom: 2vh;
 }
 
 .skills-subtitle {
@@ -19,8 +19,6 @@
   font-weight: 600;
   color: #f8fafc;
   text-decoration-line: underline;
-  padding: 8px;
-  margin-top: 1rem;
 }
 
 .skills-cards-container {
@@ -35,7 +33,7 @@
 
 @media (max-width: 768px) {
   .skills-page-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .skills-cards-container {
@@ -45,7 +43,7 @@
   }
 
   .skills-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
 }
