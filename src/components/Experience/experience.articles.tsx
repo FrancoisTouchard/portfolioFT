@@ -4,7 +4,10 @@ export const EDIFICE_ARTICLE = {
   entity: (
     <>
       <p>
-        Édifice est un <b>éditeur logiciel</b> qui développe un{' '}
+        <a href="https://edifice.io/" target="_blank">
+          Édifice
+        </a>{' '}
+        est un <b>éditeur logiciel</b> qui développe un{' '}
         <b>espace de travail numérique</b> à destination des{' '}
         <b>écoles, collèges et lycées</b>, en France et à l’international.
       </p>
@@ -105,6 +108,129 @@ export const EDIFICE_ARTICLE = {
         . J’ai pu travailler avec la plupart des métiers connexes à celui de
         développeur : designers, Quality Analysts, Project Manager ou encore
         Product Owner.
+      </p>
+    </>
+  ),
+};
+
+export const ISCOD_ARTICLE = {
+  entity: (
+    <>
+      <p>
+        <a href="https://www.iscod.fr" target="_blank">
+          L’ISCOD
+        </a>{' '}
+        est un établissement de formation qui propose plusieurs parcours, dont
+        la <b>formation d’expert en ingénierie logicielle</b> que j’y ai suivi.
+      </p>
+      <p>
+        Ce cursus commence au niveau bac +3 et dure deux ans pour déboucher sur
+        l’obtention du <b>Master Expert en Ingénierie Logicielle</b>, titre de
+        niveau 7 enregistré au Répertoire National des Certifications
+        Professionnelles.
+      </p>
+      <p>
+        Cet établissement propose une formation 100% en ligne et en alternance.
+        La particularité de ce format est donc qu’il exige une{' '}
+        <b>grande autonomie </b>
+        en tant qu’apprenant.
+      </p>
+      <p>
+        La formation consistait à suivre des cours sous forme de modules en
+        vidéo. Chaque cours était accompagné d’exercices à rendre ainsi que
+        d’évaluations chronométrées.
+      </p>
+      <p>
+        Pour la formation que j’ai suivi, les cours étaient regroupés en quatre
+        blocs principaux : <b>Gestion de la relation client</b> en ingénierie du
+        logiciel, <b>Pilotage de projet</b> d&apos;ingénierie du logiciel,{' '}
+        <b>Intégration, industrialisation et déploiement de logiciels</b>, et
+        enfin <b>Conception avancée de l&apos;architecture de logiciels</b>.
+      </p>
+      <p>
+        Pour valider chaque bloc, il fallait{' '}
+        <b>réussir une étude de cas et une évaluation</b> retraçant l’ensemble
+        des notions vues dans le bloc.
+      </p>
+      <p>
+        Lors de ce cursus, j’ai pu découvrir des langages comme <b>Java</b> et{' '}
+        <b>Kotlin</b>, ainsi que le framework frontend <b>Angular</b>, et aussi
+        approfondir mes connaissances en <b>JavaScript et TypeScript</b>. J’ai
+        également eu des cours orientés <b>DevOps</b> qui m’ont fait découvrir{' '}
+        <b>Docker et Kubernetes</b>, ainsi que des cours plus théoriques sur des
+        notions liées à l’<b>algorithmie</b>, aux <b>design patterns</b> ou
+        encore sur les <b>structures de données et leur traitement</b> en SQL et
+        NoSQL.
+      </p>
+      <p>
+        En ce qui concerne le rythme de formation, j’étais en entreprise chez
+        Édifice du lundi au jeudi, et le vendredi était réservé à la formation.
+        Pendant la seconde année, plusieurs semaines complètes supplémentaires
+        ont été dédiées à la formation.
+      </p>
+      <p>
+        Je suis actuellement en train de finaliser ce parcours, qui marquera un
+        jalon important de ma reconversion professionnelle.
+      </p>
+    </>
+  ),
+};
+
+export const EPITECH_ARTICLE = {
+  entity: (
+    <>
+      <p>
+        La{' '}
+        <a href="https://www.coding-academy.fr" target="_blank">
+          Coding Academy
+        </a>{' '}
+        est la formation au format bootcamp proposée par Epitech,{' '}
+        <b>école d’informatique et d’ingénierie logicielle</b>.
+      </p>
+      <p>
+        Le format consistait en un <b>premier semestre de projets</b> à réaliser
+        dans les locaux de l’école avec les autres élèves. J’y passais mes
+        journées de 9h à 20h, et c’est à ce moment que{' '}
+        <b>j’ai pu franchir un cap important dans mon apprentissage</b> en
+        réalisant mes premiers projets de programmation.
+      </p>
+      <p>
+        Le second semestre nous demandait de trouver et effectuer un{' '}
+        <b>stage en entreprise de 6 mois</b>, que j’ai pu réaliser chez Pickme.
+      </p>
+      <p>
+        C’est grâce à cette formation ouverte aux débutants que j’ai pu amorcer
+        ma reconversion professionnelle. J’y ai créé mes premières applications
+        très basiques en JavaScript pur et PHP, puis ensuite des projets un peu
+        plus élaborés avec React et Next.js.
+      </p>
+      <p>
+        Chaque semaine nous avions des projets à réaliser. Nous prenions le
+        brief le lundi matin et devions rendre notre production le vendredi
+        soir. Souvent, on ne connaissait que peu, voire pas du tout le langage
+        de programmation qui nous était imposé pour réaliser le projet.{' '}
+        <b>
+          C’est en partant de rien et en aboutissant à un résultat concret que
+          nous développions nos connaissances
+        </b>
+        .
+      </p>
+      <p>
+        Cette formation m’a beaucoup marqué par son rythme intense, mais surtout
+        par la méthode d’apprentissage basée sur la réalisation de projets et
+        l’absence de cours magistraux. J’ai beaucoup apprécié ce mode de travail
+        et je pense qu’il a contribué à m’aider à réussir ma formation suivante
+        à l’ISCOD, et par extension à{' '}
+        <b>
+          faire de moi un bon développeur capable de s’emparer d’une grande
+          variété de challenges
+        </b>
+        .
+      </p>
+      <p>
+        J’y ai obtenu en février 2023 un titre RNCP d’intégrateur développeur
+        web niveau 5, ainsi qu’une certification Epitech de concepteur
+        développeur web et mobile.
       </p>
     </>
   ),

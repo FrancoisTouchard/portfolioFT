@@ -6,7 +6,11 @@ import {
   SKILLS_TAGS,
   WORKS_TAGS,
 } from '../../utils/navigation/navigation-links';
-import { EDIFICE_ARTICLE } from './experience.articles';
+import {
+  EDIFICE_ARTICLE,
+  EPITECH_ARTICLE,
+  ISCOD_ARTICLE,
+} from './experience.articles';
 import { ExperienceDetailsProps } from './types';
 
 export const EXPERIENCES: ExperienceDetailsProps[] = [
@@ -37,8 +41,14 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
   },
   {
     id: 2,
-    article: { entity: 'todo' },
-    articleTags: [],
+    article: ISCOD_ARTICLE,
+    articleTags: [
+      SKILLS_TAGS.javascript,
+      SKILLS_TAGS.typescript,
+      SKILLS_TAGS.uxui,
+      SKILLS_TAGS.commitment,
+      SKILLS_TAGS.organization,
+    ],
     cardTags: ['JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Angular', 'CSS'],
     company: 'ISCOD',
     date: '02/09/2024 au 02/09/2026',
@@ -65,8 +75,14 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
   },
   {
     id: 4,
-    article: { entity: 'todo' },
-    articleTags: [],
+    article: EPITECH_ARTICLE,
+    articleTags: [
+      SKILLS_TAGS.javascript,
+      SKILLS_TAGS.react,
+      SKILLS_TAGS.reactNative,
+      SKILLS_TAGS.commitment,
+      SKILLS_TAGS.organization,
+    ],
     cardTags: [
       'React',
       'React Native',

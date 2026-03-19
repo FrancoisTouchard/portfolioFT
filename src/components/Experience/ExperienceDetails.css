@@ -24,6 +24,10 @@
   text-align: justify;
 }
 
+.experiences-article-section a {
+  color: inherit;
+}
+
 .experiences-article-subtitle {
   margin-top: 4%;
   font-family: 'Next Art';
