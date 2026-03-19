@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+  margin-top: 2rem;
 }
 
 .experiences-details-logo {
@@ -15,4 +16,15 @@
   object-fit: contain;
   padding: 12px;
   width: 20%;
+}
+
+.experiences-article-section {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: justify;
+}
+
+.experiences-article-subtitle {
+  margin-top: 4%;
+  font-family: 'Next Art';
 }

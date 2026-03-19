@@ -56,11 +56,11 @@ const Timeline = () => {
                 className="timeline-content"
                 to={`/experiences/${exp.slug}`}>
                 <TimelineCard
+                  cardTags={exp.cardTags}
                   company={exp.company}
                   description={exp.description}
                   logo={exp.logo}
                   position={isLeft ? 'left' : 'right'}
-                  tags={exp.tags}
                   title={exp.title}
                 />
               </Link>

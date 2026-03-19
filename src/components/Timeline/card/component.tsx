@@ -5,12 +5,12 @@ import React from 'react';
 import { TimelineCardProps } from './types';
 
 const TimelineCard = ({
+  cardTags,
   title,
   company,
   description,
   logo,
   position,
-  tags,
 }: TimelineCardProps) => {
   return (
     <div
@@ -28,7 +28,7 @@ const TimelineCard = ({
       </div>
       <p className="timeline-card-description">{description}</p>
       <div className="timeline-card-tags">
-        {tags.map((tag, index) => (
+        {cardTags.map((tag, index) => (
           <span key={index} className="timeline-card-tag">
             {tag}
           </span>

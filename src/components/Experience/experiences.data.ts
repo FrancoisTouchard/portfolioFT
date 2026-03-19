@@ -2,51 +2,60 @@ import logoEdifice from '../../assets/logos/logo_edifice.png';
 import logoEpitech from '../../assets/logos/logo_epitech.png';
 import logoIscod from '../../assets/logos/logo_iscod.jpg';
 import logoPickme from '../../assets/logos/logo_pickme.png';
+import { EDIFICE_ARTICLE } from './experience.articles';
 import { ExperienceDetailsProps } from './types';
 
 export const EXPERIENCES: ExperienceDetailsProps[] = [
   {
     id: 1,
+    article: EDIFICE_ARTICLE,
     title: 'Développeur Frontend Mobile',
     company: 'Édifice (en alternance)',
     date: '02/09/2024 au 02/09/2026',
     description:
       "Développement de la version application mobile (Android & iOS) de l'espace de travail numérique édité par Édifice. Alternance réalisée dans le cadre de la préparation de mon master à l'ISCOD.",
+    isSchool: false,
     logo: { src: logoEdifice, alt: 'Logo Édifice' },
     slug: 'edifice',
-    tags: ['React Native', 'JavaScript', 'TypeScript', 'CSS', 'Git'],
+    cardTags: ['React Native', 'JavaScript', 'TypeScript', 'CSS', 'Git'],
   },
   {
     id: 2,
+    article: { entity: 'todo' },
     title: `Master "Expert Ingénierie du Logiciel"`,
     company: 'ISCOD',
     date: '02/09/2024 au 02/09/2026',
     description:
       "Préparation en 2 ans d'un Master visant à finaliser ma reconversion. J'ai suivi à l'ISCOD une formation généraliste de développeur full-stack web.",
+    isSchool: true,
     logo: { src: logoIscod, alt: 'Logo ISCOD' },
     slug: 'iscod',
-    tags: ['JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Angular', 'CSS'],
+    cardTags: ['JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Angular', 'CSS'],
   },
   {
     id: 3,
+    article: { entity: 'todo' },
     title: 'Développeur Fullstack Mobile',
     company: 'Pickme (en stage)',
     date: '08/03/2023 au 07/09/2023',
     description:
       'Pickme est une plateforme de livraison collaborative de particuliers qui réceptionnent les colis pour leurs voisins. Stage réalisé dans le cadre de la formation Coding Academy by Epitech.',
+    isSchool: false,
     logo: { src: logoPickme, alt: 'Logo Pickme' },
     slug: 'pickme',
-    tags: ['React Native', 'Node.js', 'PostgreSQL'],
+    cardTags: ['React Native', 'Node.js', 'PostgreSQL'],
   },
   {
     id: 4,
+    article: { entity: 'todo' },
     title: 'Formation Développeur Web',
     company: 'Coding Academy by Epitech',
     date: '03/10/2022 au 03/03/2023',
     description: `Obtention du titre RNCP niveau 5 "Intégrateur développeur web", puis de la certification Epitech "Concepteur Développeur web & mobile".`,
+    isSchool: true,
     logo: { src: logoEpitech, alt: 'Logo Epitech' },
     slug: 'epitech',
-    tags: [
+    cardTags: [
       'React',
       'React Native',
       'JavaScript',
