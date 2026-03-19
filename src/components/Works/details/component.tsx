@@ -1,9 +1,9 @@
-import React from "react";
-import { useParams, Link, Navigate } from 'react-router-dom';
-
 import './WorksDetails.css';
-import { WORKS } from '../works.data';
 
+import React from 'react';
+import { Link, Navigate, useParams } from 'react-router-dom';
+
+import { WORKS } from '../works.data';
 
 const WorkDetails = () => {
   const { workSlug } = useParams();
@@ -16,11 +16,11 @@ const WorkDetails = () => {
 
   return (
     <>
-      <section className='works-details-header'>
-        <h1 className='works-details-title' >{work.title}</h1>
+      <section className="works-details-header">
+        <h1 className="works-details-title">{work.title}</h1>
         {/* Ajouter le visuel ici */}
       </section>
-      <section className='works-details-article-section'>
+      <section className="works-details-article-section">
         <h2 className="works-details-article-subtitle">Introduction</h2>
         {work.article.intro}
         <h2 className="works-details-article-subtitle">Le Contexte</h2>
@@ -31,23 +31,27 @@ const WorkDetails = () => {
         {work.article.actors}
         <h2 className="works-details-article-subtitle">Les Résultats</h2>
         {work.article.results}
-        <h2 className="works-details-article-subtitle">L'Avenir du projet</h2>
+        <h2 className="works-details-article-subtitle">
+          L&apos;Avenir du projet
+        </h2>
         {work.article.future}
         <h2 className="works-details-article-subtitle">Mon regard critique</h2>
         {work.article.criticism}
-        <h2 className="works-details-article-subtitle" id="works-associated-work">Compétences associées</h2>
+        <h2
+          className="works-details-article-subtitle"
+          id="works-associated-work">
+          Compétences associées
+        </h2>
         <div className="works-tags-container">
           {work.tags.map((tag, index) => (
-            <Link key={index} to={`/skills/${tag.linkName}`}>
-              <span className="works-tag">
-                {tag.displayName}
-              </span>
+            <Link key={index} to={`/skills/${tag.path}`}>
+              <span className="works-tag">{tag.label}</span>
             </Link>
           ))}
         </div>
       </section>
     </>
   );
-}
+};
 
 export default WorkDetails;
