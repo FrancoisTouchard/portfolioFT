@@ -24,9 +24,9 @@ const PreviousLife = () => {
 
       <p className="previous-life-text">
         Aujourd&apos;hui, après 4 années passées à me former, je suis convaincu
-        d&apos;avoir le bon choix en ayant opté pour un métier qui permet de
-        s&apos;épanouir tant sur le plan technique que créatif, et où l&apos;on
-        a l&apos;on a jamais fini d&apos;apprendre.
+        d&apos;avoir fait le bon choix en ayant opté pour un métier qui permet
+        de s&apos;épanouir tant sur le plan technique que créatif, et où
+        l&apos;on a jamais fini d&apos;apprendre.
       </p>
     </div>
   );

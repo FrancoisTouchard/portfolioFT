@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from "react-router-dom";
-
 import './Timeline.css';
-import TimelineCard from './card/component';
+
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import { EXPERIENCES } from '../Experience/experiences.data';
+import TimelineCard from './card/component';
 
 const Timeline = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
@@ -11,21 +12,21 @@ const Timeline = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
+      entries => {
+        entries.forEach(entry => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute('data-id');
-            setVisibleItems((prev) => new Set([...prev, id]));
+            setVisibleItems(prev => new Set([...prev, id]));
           }
         });
       },
       {
         threshold: 0.2,
-        rootMargin: '0px 0px -100px 0px'
-      }
+        rootMargin: '0px 0px -100px 0px',
+      },
     );
 
-    itemRefs.current.forEach((ref) => {
+    itemRefs.current.forEach(ref => {
       if (ref) observer.observe(ref);
     });
 
@@ -46,13 +47,14 @@ const Timeline = () => {
           return (
             <div
               key={exp.id}
-              ref={(el) => {
+              ref={el => {
                 itemRefs.current[index] = el;
-              }} data-id={exp.id}
-              className={`timeline-item ${isLeft ? 'timeline-item-left' : 'timeline-item-right'} ${isVisible ? 'timeline-item-visible' : 'timeline-item-hidden'}`}
-            >
-
-              <Link className="timeline-content" to={`/experiences/${exp.slug}`}>
+              }}
+              data-id={exp.id}
+              className={`timeline-item ${isLeft ? 'timeline-item-left' : 'timeline-item-right'} ${isVisible ? 'timeline-item-visible' : 'timeline-item-hidden'}`}>
+              <Link
+                className="timeline-content"
+                to={`/experiences/${exp.slug}`}>
                 <TimelineCard
                   company={exp.company}
                   description={exp.description}

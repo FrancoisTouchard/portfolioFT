@@ -13,18 +13,23 @@ const TimelineCard = ({
   tags,
 }: TimelineCardProps) => {
   return (
-    <div className={position === 'left' ? 'cardLeft' : 'cardRight'}>
-      <div className="cardHeader">
-        <div className="cardHeaderText">
-          <h3 className="cardTitle">{title}</h3>
-          <p className="cardCompany">{company}</p>
+    <div
+      className={`timeline-card ${position === 'left' ? 'timeline-card--left' : 'timeline-card--right'}`}>
+      <div className="timeline-card-header">
+        <div className="timeline-card-header-text">
+          <h3 className="timeline-card-title">{title}</h3>
+          <p className="timeline-card-company">{company}</p>
         </div>
-        <img className="companyLogo" src={logo.src} alt={logo.alt} />
+        <img
+          className="timeline-card-company-logo"
+          src={logo.src}
+          alt={logo.alt}
+        />
       </div>
-      <p className="cardDescription">{description}</p>
-      <div className="tags">
+      <p className="timeline-card-description">{description}</p>
+      <div className="timeline-card-tags">
         {tags.map((tag, index) => (
-          <span key={index} className="tag">
+          <span key={index} className="timeline-card-tag">
             {tag}
           </span>
         ))}

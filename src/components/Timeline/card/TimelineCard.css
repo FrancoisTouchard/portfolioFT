@@ -1,58 +1,50 @@
-.cardLeft {
+.timeline-card {
   background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   padding: 24px;
   border-radius: 12px;
-  margin-right: 80px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 1px solid #475569;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.cardLeft:hover,
-.cardRight:hover {
+.timeline-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3);
 }
 
-.cardRight {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-  padding: 24px;
-  border-radius: 12px;
+.timeline-card--left {
+  margin-right: 80px;
+}
+
+.timeline-card--right {
   margin-left: 80px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid #475569;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
-.cardHeader {
-  margin-bottom: 12px;
+.timeline-card-header {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  gap: 16px;
 }
 
-.cardHeaderText {
+.timeline-card-header-text {
   flex: 1;
 }
 
-.cardTitle {
+.timeline-card-title {
   font-size: 1.5rem;
   font-weight: 600;
   color: #f8fafc;
   margin-bottom: 8px;
 }
 
-.cardCompany {
+.timeline-card-company {
   font-size: 1.1rem;
   color: #94a3b8;
   font-weight: 500;
   margin: 0;
 }
 
-.cardDescription {
+.timeline-card-description {
   font-size: 1rem;
   line-height: 1.6;
   color: #cbd5e1;
@@ -60,7 +52,7 @@
   text-align: justify;
 }
 
-.companyLogo {
+.timeline-card-company-logo {
   display: block;
   max-width: 80px;
   max-height: 60px;
@@ -74,13 +66,13 @@
   flex-shrink: 0;
 }
 
-.tags {
+.timeline-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.tag {
+.timeline-card-tag {
   background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
   color: #ffffff;
   padding: 4px 12px;
@@ -91,31 +83,36 @@
 
 @media (max-width: 768px) {
 
-  .cardLeft,
-  .cardRight {
+  .timeline-card {
     /* Pour aligner le bord de la card avec le bord du dateLabel
     marker = 20px + circle 24px + offset 12px - ajustement 8px
     */
     margin-left: 48px;
     margin-right: 0;
+    padding: 12px;
   }
 
-  .cardHeader {
+  .timeline-card-header {
     position: relative;
   }
 
   /*
   padding right + position absolute du logo = gestion des chevauchements titre/logo entre 360 et 420px
+  ajusté de -8px pour laisser le max de place possible au texte
   */
-  .cardHeaderText {
-    padding-right: 64px;
+  .timeline-card-header-text {
+    padding-right: 56px;
   }
 
-  .companyLogo {
+  .timeline-card-company-logo {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -4px;
+    right: -4px;
     max-width: 48px;
     max-height: 36px;
+  }
+
+  .timeline-card-tags {
+    justify-content: center;
   }
 }
