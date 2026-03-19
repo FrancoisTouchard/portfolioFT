@@ -61,7 +61,7 @@ const Timeline = () => {
                   description={exp.description}
                   logo={exp.logo}
                   position={isLeft ? 'left' : 'right'}
-                  title={exp.title}
+                  title={exp.cardTitle}
                 />
               </Link>
 

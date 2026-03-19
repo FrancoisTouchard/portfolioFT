@@ -22,6 +22,7 @@ const ExperienceDetails = () => {
           src={experience.logo.src}
           alt={experience.logo.alt}
         />
+        <h1 className="experiences-details-title">{experience.articleTitle}</h1>
       </section>
       <section className="experiences-article-section">
         <h2 className="experiences-article-subtitle">

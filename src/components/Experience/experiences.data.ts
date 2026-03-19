@@ -29,7 +29,9 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
       SKILLS_TAGS.commitment,
       SKILLS_TAGS.thinking,
     ],
+    articleTitle: 'Édifice',
     cardTags: ['React Native', 'JavaScript', 'TypeScript', 'CSS', 'Git'],
+    cardTitle: 'Développeur Frontend Mobile',
     company: 'Édifice (en alternance)',
     date: '02/09/2024 au 02/09/2026',
     description:
@@ -37,7 +39,6 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
     isSchool: false,
     logo: { src: logoEdifice, alt: 'Logo Édifice' },
     slug: 'edifice',
-    title: 'Développeur Frontend Mobile',
   },
   {
     id: 2,
@@ -49,7 +50,9 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
       SKILLS_TAGS.commitment,
       SKILLS_TAGS.organization,
     ],
+    articleTitle: 'ISCOD',
     cardTags: ['JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Angular', 'CSS'],
+    cardTitle: `Master "Expert Ingénierie du Logiciel"`,
     company: 'ISCOD',
     date: '02/09/2024 au 02/09/2026',
     description:
@@ -57,13 +60,14 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
     isSchool: true,
     logo: { src: logoIscod, alt: 'Logo ISCOD' },
     slug: 'iscod',
-    title: `Master "Expert Ingénierie du Logiciel"`,
   },
   {
     id: 3,
     article: { entity: 'todo' },
     articleTags: [],
+    articleTitle: 'Pickme',
     cardTags: ['React Native', 'Node.js', 'PostgreSQL'],
+    cardTitle: 'Développeur Fullstack Mobile',
     company: 'Pickme (en stage)',
     date: '08/03/2023 au 07/09/2023',
     description:
@@ -71,7 +75,6 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
     isSchool: false,
     logo: { src: logoPickme, alt: 'Logo Pickme' },
     slug: 'pickme',
-    title: 'Développeur Fullstack Mobile',
   },
   {
     id: 4,
@@ -83,6 +86,7 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
       SKILLS_TAGS.commitment,
       SKILLS_TAGS.organization,
     ],
+    articleTitle: 'Coding Academy par Epitech',
     cardTags: [
       'React',
       'React Native',
@@ -93,12 +97,12 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
       'Mongo DB',
       'SQL',
     ],
+    cardTitle: 'Formation Développeur Web',
     company: 'Coding Academy by Epitech',
     date: '03/10/2022 au 03/03/2023',
     description: `Obtention du titre RNCP niveau 5 "Intégrateur développeur web", puis de la certification Epitech "Concepteur Développeur web & mobile".`,
     isSchool: true,
     logo: { src: logoEpitech, alt: 'Logo Epitech' },
     slug: 'epitech',
-    title: 'Formation Développeur Web',
   },
 ];
