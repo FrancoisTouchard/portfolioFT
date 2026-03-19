@@ -56,7 +56,8 @@
   font-size: 1rem;
   line-height: 1.6;
   color: #cbd5e1;
-  margin-bottom: 16px;
+  padding-right: 1%;
+  text-align: justify;
 }
 
 .companyLogo {
