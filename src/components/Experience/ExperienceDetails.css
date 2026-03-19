@@ -28,3 +28,66 @@
   margin-top: 4%;
   font-family: 'Next Art';
 }
+
+#experiences-associated-work {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.experiences-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.experiences-tags-container a {
+  text-decoration: none;
+}
+
+.experiences-tag {
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+
+  .experiences-details-section {
+    margin-top: 0.2rem;
+  }
+
+  .experiences-details-logo {
+    padding: 4px;
+  }
+
+  .experiences-details-title {
+    margin-top: 1.2rem;
+    font-size: 2rem;
+  }
+
+  .experiences-article-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .experiences-article-subtitle {
+    margin-top: 2rem;
+    font-family: 'Next Art';
+    font-size: 1.2rem;
+  }
+
+  #experiences-associated-work {
+    margin-top: 12%;
+  }
+
+  .experiences-tag {
+    padding: 4px 12px;
+    font-size: 0.9rem;
+  }
+}

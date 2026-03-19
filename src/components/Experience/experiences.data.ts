@@ -2,6 +2,10 @@ import logoEdifice from '../../assets/logos/logo_edifice.png';
 import logoEpitech from '../../assets/logos/logo_epitech.png';
 import logoIscod from '../../assets/logos/logo_iscod.jpg';
 import logoPickme from '../../assets/logos/logo_pickme.png';
+import {
+  SKILLS_TAGS,
+  WORKS_TAGS,
+} from '../../utils/navigation/navigation-links';
 import { EDIFICE_ARTICLE } from './experience.articles';
 import { ExperienceDetailsProps } from './types';
 
@@ -9,7 +13,19 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
   {
     id: 1,
     article: EDIFICE_ARTICLE,
-    title: 'Développeur Frontend Mobile',
+    articleTags: [
+      WORKS_TAGS.carrousel,
+      WORKS_TAGS.wiki,
+      SKILLS_TAGS.javascript,
+      SKILLS_TAGS.typescript,
+      SKILLS_TAGS.reactNative,
+      SKILLS_TAGS.uxui,
+      SKILLS_TAGS.communication,
+      SKILLS_TAGS.creativity,
+      SKILLS_TAGS.commitment,
+      SKILLS_TAGS.thinking,
+    ],
+    cardTags: ['React Native', 'JavaScript', 'TypeScript', 'CSS', 'Git'],
     company: 'Édifice (en alternance)',
     date: '02/09/2024 au 02/09/2026',
     description:
@@ -17,12 +33,13 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
     isSchool: false,
     logo: { src: logoEdifice, alt: 'Logo Édifice' },
     slug: 'edifice',
-    cardTags: ['React Native', 'JavaScript', 'TypeScript', 'CSS', 'Git'],
+    title: 'Développeur Frontend Mobile',
   },
   {
     id: 2,
     article: { entity: 'todo' },
-    title: `Master "Expert Ingénierie du Logiciel"`,
+    articleTags: [],
+    cardTags: ['JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Angular', 'CSS'],
     company: 'ISCOD',
     date: '02/09/2024 au 02/09/2026',
     description:
@@ -30,12 +47,13 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
     isSchool: true,
     logo: { src: logoIscod, alt: 'Logo ISCOD' },
     slug: 'iscod',
-    cardTags: ['JavaScript', 'TypeScript', 'Java', 'Kotlin', 'Angular', 'CSS'],
+    title: `Master "Expert Ingénierie du Logiciel"`,
   },
   {
     id: 3,
     article: { entity: 'todo' },
-    title: 'Développeur Fullstack Mobile',
+    articleTags: [],
+    cardTags: ['React Native', 'Node.js', 'PostgreSQL'],
     company: 'Pickme (en stage)',
     date: '08/03/2023 au 07/09/2023',
     description:
@@ -43,18 +61,12 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
     isSchool: false,
     logo: { src: logoPickme, alt: 'Logo Pickme' },
     slug: 'pickme',
-    cardTags: ['React Native', 'Node.js', 'PostgreSQL'],
+    title: 'Développeur Fullstack Mobile',
   },
   {
     id: 4,
     article: { entity: 'todo' },
-    title: 'Formation Développeur Web',
-    company: 'Coding Academy by Epitech',
-    date: '03/10/2022 au 03/03/2023',
-    description: `Obtention du titre RNCP niveau 5 "Intégrateur développeur web", puis de la certification Epitech "Concepteur Développeur web & mobile".`,
-    isSchool: true,
-    logo: { src: logoEpitech, alt: 'Logo Epitech' },
-    slug: 'epitech',
+    articleTags: [],
     cardTags: [
       'React',
       'React Native',
@@ -65,5 +77,12 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
       'Mongo DB',
       'SQL',
     ],
+    company: 'Coding Academy by Epitech',
+    date: '03/10/2022 au 03/03/2023',
+    description: `Obtention du titre RNCP niveau 5 "Intégrateur développeur web", puis de la certification Epitech "Concepteur Développeur web & mobile".`,
+    isSchool: true,
+    logo: { src: logoEpitech, alt: 'Logo Epitech' },
+    slug: 'epitech',
+    title: 'Formation Développeur Web',
   },
 ];

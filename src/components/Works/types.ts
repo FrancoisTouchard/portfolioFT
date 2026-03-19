@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { TagProps } from '../../utils/navigation/navigation-links';
+
 export interface WorkProps {
   id: number;
   article: {
@@ -14,6 +16,6 @@ export interface WorkProps {
   description: string;
   illustration: { src: string; alt: string };
   slug: string;
-  tags: { label: string; path: string }[];
+  tags: TagProps[];
   title: string;
 }

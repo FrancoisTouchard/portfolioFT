@@ -1,7 +1,7 @@
 import './ExperienceDetails.css';
 
 import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import { Link, Navigate, useParams } from 'react-router-dom';
 
 import { EXPERIENCES } from './experiences.data';
 
@@ -36,6 +36,18 @@ const ExperienceDetails = () => {
             {experience.article.role}
           </>
         )}
+        <h2
+          className="experiences-article-subtitle"
+          id="experiences-associated-work">
+          Compétences et réalisations associées
+        </h2>
+        <div className="experiences-tags-container">
+          {experience.articleTags.map((tag, index) => (
+            <Link key={index} to={`/${tag.type}/${tag.path}`}>
+              <span className="experiences-tag">{tag.label}</span>
+            </Link>
+          ))}
+        </div>
       </section>
     </>
   );

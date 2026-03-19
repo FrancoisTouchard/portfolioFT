@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { TagProps } from '../../utils/navigation/navigation-links';
+
 export interface SkillProps {
   article: {
     definition: React.ReactNode;
@@ -11,6 +13,6 @@ export interface SkillProps {
   description: string;
   logo: { src: string; alt: string };
   slug: string;
-  tags: { label: string; path: string }[];
+  tags: TagProps[];
   title: string;
 }
