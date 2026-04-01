@@ -14,7 +14,11 @@ import {
   CREATIVITY_ARTICLE,
   CRITICAL_THINKING_ARTICLE,
   JAVASCRIPT_ARTICLE,
+  ORGANIZATION_ARTICLE,
+  REACT_ARTICLE,
+  REACT_NATIVE_ARTICLE,
   TYPESCRIPT_ARTICLE,
+  UXUI_ARTICLE,
 } from './skills.articles';
 import { SkillProps } from './types';
 
@@ -49,12 +53,7 @@ export const SKILLS: SkillProps[] = [
     ],
   },
   {
-    article: {
-      definition: 'todo',
-      proofs: 'todo',
-      criticism: 'todo',
-      evolution: 'todo',
-    },
+    article: REACT_NATIVE_ARTICLE,
     category: 'HARD',
     description: 'desc',
     title: 'React Native',
@@ -68,36 +67,20 @@ export const SKILLS: SkillProps[] = [
     ],
   },
   {
-    article: {
-      definition: 'todo',
-      proofs: 'todo',
-      criticism: 'todo',
-      evolution: 'todo',
-    },
+    article: REACT_ARTICLE,
     category: 'HARD',
     description: 'desc',
     title: 'React',
     logo: { src: reactLogo, alt: 'Logo React' },
     slug: 'react',
-    tags: [
-      WORKS_TAGS.carrousel,
-      WORKS_TAGS.wiki,
-      WORKS_TAGS.indigo,
-      WORKS_TAGS.myGifLibrary,
-      WORKS_TAGS.chatbot,
-    ],
+    tags: [WORKS_TAGS.myGifLibrary, WORKS_TAGS.chatbot],
   },
   {
-    article: {
-      definition: 'todo',
-      proofs: 'todo',
-      criticism: 'todo',
-      evolution: 'todo',
-    },
+    article: UXUI_ARTICLE,
     category: 'HARD',
     description: 'desc',
     title: 'UX/UI',
-    logo: { src: uxIcon, alt: 'Logo UX/UI' },
+    logo: { src: uxIcon, alt: 'Icône UX/UI' },
     slug: 'uxui',
     tags: [WORKS_TAGS.carrousel, WORKS_TAGS.wiki],
   },
@@ -108,13 +91,7 @@ export const SKILLS: SkillProps[] = [
     title: 'Communication',
     logo: { src: communicationIcon, alt: 'Icône Communication' },
     slug: 'communication',
-    tags: [
-      WORKS_TAGS.carrousel,
-      WORKS_TAGS.wiki,
-      WORKS_TAGS.indigo,
-      WORKS_TAGS.myGifLibrary,
-      WORKS_TAGS.chatbot,
-    ],
+    tags: [WORKS_TAGS.carrousel, WORKS_TAGS.wiki, WORKS_TAGS.myGifLibrary],
   },
   {
     article: CREATIVITY_ARTICLE,
@@ -123,12 +100,7 @@ export const SKILLS: SkillProps[] = [
     title: 'Créativité',
     logo: { src: creativityIcon, alt: 'Icône Créativité' },
     slug: 'creativity',
-    tags: [
-      WORKS_TAGS.carrousel,
-      WORKS_TAGS.wiki,
-      WORKS_TAGS.indigo,
-      WORKS_TAGS.myGifLibrary,
-    ],
+    tags: [WORKS_TAGS.carrousel, WORKS_TAGS.wiki, WORKS_TAGS.indigo],
   },
   {
     article: CRITICAL_THINKING_ARTICLE,
@@ -137,12 +109,7 @@ export const SKILLS: SkillProps[] = [
     title: 'Esprit Critique',
     logo: { src: thinkingIcon, alt: 'Icône Esprit Critique' },
     slug: 'critical-thinking',
-    tags: [
-      WORKS_TAGS.carrousel,
-      WORKS_TAGS.wiki,
-      WORKS_TAGS.indigo,
-      WORKS_TAGS.myGifLibrary,
-    ],
+    tags: [WORKS_TAGS.carrousel, WORKS_TAGS.indigo, WORKS_TAGS.myGifLibrary],
   },
   {
     article: COMMITMENT_ARTICLE,
@@ -151,30 +118,15 @@ export const SKILLS: SkillProps[] = [
     title: 'Implication',
     logo: { src: autonomyIcon, alt: 'Icône Autonomie' },
     slug: 'commitment',
-    tags: [
-      WORKS_TAGS.carrousel,
-      WORKS_TAGS.wiki,
-      WORKS_TAGS.indigo,
-      WORKS_TAGS.myGifLibrary,
-    ],
+    tags: [WORKS_TAGS.carrousel, WORKS_TAGS.indigo],
   },
   {
-    article: {
-      definition: 'todo',
-      proofs: 'todo',
-      criticism: 'todo',
-      evolution: 'todo',
-    },
+    article: ORGANIZATION_ARTICLE,
     category: 'SOFT',
     description: 'desc',
     title: 'Organisation',
     logo: { src: organizationIcon, alt: 'Icône Organisation' },
     slug: 'organization',
-    tags: [
-      WORKS_TAGS.carrousel,
-      WORKS_TAGS.wiki,
-      WORKS_TAGS.indigo,
-      WORKS_TAGS.myGifLibrary,
-    ],
+    tags: [WORKS_TAGS.carrousel, WORKS_TAGS.indigo],
   },
 ];
