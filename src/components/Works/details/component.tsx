@@ -1,8 +1,7 @@
-import './WorksDetails.css';
-
 import React from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
+import Article from '../../../components/Article/Article';
 import { WORKS } from '../works.data';
 
 const WorkDetails = () => {
@@ -14,43 +13,28 @@ const WorkDetails = () => {
     return <Navigate to="/works" />;
   }
 
+  const sections = [
+    { title: 'Introduction', content: work.article.intro },
+    { title: 'Le Contexte', content: work.article.context },
+    { title: 'Les Étapes', content: work.article.steps },
+    { title: 'Les Acteurs', content: work.article.actors },
+    { title: 'Les Résultats', content: work.article.results },
+    { title: "L'Avenir du projet", content: work.article.future },
+    { title: 'Mon regard critique', content: work.article.criticism },
+  ];
+
+  const tags = work.tags.map(tag => ({
+    label: tag.label,
+    to: `/skills/${tag.path}`,
+  }));
+
   return (
-    <>
-      <section className="works-details-header">
-        <h1 className="works-details-title">{work.title}</h1>
-        {/* Ajouter le visuel ici */}
-      </section>
-      <section className="works-details-article-section">
-        <h2 className="works-details-article-subtitle">Introduction</h2>
-        {work.article.intro}
-        <h2 className="works-details-article-subtitle">Le Contexte</h2>
-        {work.article.context}
-        <h2 className="works-details-article-subtitle">Les Étapes</h2>
-        {work.article.steps}
-        <h2 className="works-details-article-subtitle">Les Acteurs</h2>
-        {work.article.actors}
-        <h2 className="works-details-article-subtitle">Les Résultats</h2>
-        {work.article.results}
-        <h2 className="works-details-article-subtitle">
-          L&apos;Avenir du projet
-        </h2>
-        {work.article.future}
-        <h2 className="works-details-article-subtitle">Mon regard critique</h2>
-        {work.article.criticism}
-        <h2
-          className="works-details-article-subtitle"
-          id="works-associated-work">
-          Compétences associées
-        </h2>
-        <div className="works-tags-container">
-          {work.tags.map((tag, index) => (
-            <Link key={index} to={`/skills/${tag.path}`}>
-              <span className="works-tag">{tag.label}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </>
+    <Article
+      sections={sections}
+      tags={tags}
+      tagsContainerTitle="Compétences associées"
+      title={work.title}
+    />
   );
 };
 

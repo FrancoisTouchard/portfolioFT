@@ -1,8 +1,7 @@
-import './ExperienceDetails.css';
-
 import React from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
+import Article from '../../components/Article/Article';
 import { EXPERIENCES } from './experiences.data';
 
 const ExperienceDetails = () => {
@@ -14,43 +13,31 @@ const ExperienceDetails = () => {
     return <Navigate to="/" />;
   }
 
+  const sections = [
+    {
+      title: experience.isSchool
+        ? "L'établissement, le diplôme et la formation"
+        : "L'entreprise",
+      content: experience.article.entity,
+    },
+    ...(experience.isSchool || !experience.article.role
+      ? []
+      : [{ title: 'Mon rôle', content: experience.article.role }]),
+  ];
+
+  const tags = experience.articleTags.map(tag => ({
+    label: tag.label,
+    to: `/${tag.type}/${tag.path}`,
+  }));
+
   return (
-    <>
-      <section className="experiences-details-section">
-        <img
-          className="experiences-details-logo"
-          src={experience.logo.src}
-          alt={experience.logo.alt}
-        />
-        <h1 className="experiences-details-title">{experience.articleTitle}</h1>
-      </section>
-      <section className="experiences-article-section">
-        <h2 className="experiences-article-subtitle">
-          {experience.isSchool
-            ? "L'établissement, le diplôme et la formation"
-            : "L'entreprise"}
-        </h2>
-        {experience.article.entity}
-        {!experience.isSchool && (
-          <>
-            <h2 className="experiences-article-subtitle">Mon rôle</h2>
-            {experience.article.role}
-          </>
-        )}
-        <h2
-          className="experiences-article-subtitle"
-          id="experiences-associated-work">
-          Compétences et réalisations associées
-        </h2>
-        <div className="experiences-tags-container">
-          {experience.articleTags.map((tag, index) => (
-            <Link key={index} to={`/${tag.type}/${tag.path}`}>
-              <span className="experiences-tag">{tag.label}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </>
+    <Article
+      logo={experience.logo}
+      sections={sections}
+      tags={tags}
+      tagsContainerTitle="Compétences et réalisations associées"
+      title={experience.articleTitle}
+    />
   );
 };
 

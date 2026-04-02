@@ -1,8 +1,7 @@
-import './SkillDetails.css';
-
 import React from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
+import Article from '../../../components/Article/Article';
 import { SKILLS } from '../skills.data';
 
 const SkillDetails = () => {
@@ -14,39 +13,29 @@ const SkillDetails = () => {
     return <Navigate to="/skills" />;
   }
 
+  const sections = [
+    { title: 'Ma définition', content: skill.article.definition },
+    { title: 'Mes éléments de preuve', content: skill.article.proofs },
+    { title: 'Mon autocritique', content: skill.article.criticism },
+    {
+      title: 'Mon évolution dans cette compétence',
+      content: skill.article.evolution,
+    },
+  ];
+
+  const tags = skill.tags.map(tag => ({
+    label: tag.label,
+    to: `/works/${tag.path}`,
+  }));
+
   return (
-    <>
-      <section className="skills-details-section">
-        <img
-          className="skills-details-logo"
-          src={skill.logo.src}
-          alt={skill.logo.alt}
-        />
-        <h1 className="skills-details-title">{skill.title}</h1>
-      </section>
-      <section className="skills-article-section">
-        <h2 className="skills-article-subtitle">Ma définition</h2>
-        {skill.article.definition}
-        <h2 className="skills-article-subtitle">Mes éléments de preuve</h2>
-        {skill.article.proofs}
-        <h2 className="skills-article-subtitle">Mon autocritique</h2>
-        {skill.article.criticism}
-        <h2 className="skills-article-subtitle">
-          Mon évolution dans cette compétence
-        </h2>
-        {skill.article.evolution}
-        <h2 className="skills-article-subtitle" id="skills-associated-work">
-          Réalisations associées
-        </h2>
-        <div className="skills-tags-container">
-          {skill.tags.map((tag, index) => (
-            <Link key={index} to={`/works/${tag.path}`}>
-              <span className="skill-tag">{tag.label}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-    </>
+    <Article
+      logo={skill.logo}
+      sections={sections}
+      tags={tags}
+      tagsContainerTitle="Réalisations associées"
+      title={skill.title}
+    />
   );
 };
 

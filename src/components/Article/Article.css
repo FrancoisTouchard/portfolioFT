@@ -1,4 +1,4 @@
-.skills-details-section {
+.article-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,7 @@
   margin-top: 2rem;
 }
 
-.skills-details-logo {
+.article-header-logo {
   display: block;
   aspect-ratio: 1;
   flex-shrink: 0;
@@ -18,34 +18,40 @@
   width: 10%;
 }
 
-.skills-details-title {
+.article-header-title {
   margin-top: 3rem;
   font-size: 2.4rem;
   font-family: 'Next Art';
   font-weight: 700;
 }
 
-.skills-article-section {
+/*Titres sans logo au dessus (Works) = no margin-top */
+.article-header-title--standalone {
+  margin-top: 0;
+}
+
+.article-body {
   padding-left: 25%;
   padding-right: 25%;
   text-align: justify;
+  font-size: 1.2rem;
 }
 
-.skills-article-section a {
+.article-body a {
   color: inherit;
 }
 
-.skills-article-subtitle {
+.article-subtitle {
   margin-top: 4%;
   font-family: 'Next Art';
 }
 
-#skills-associated-work {
+.article-tags-title {
   text-align: center;
   margin-top: 8%;
 }
 
-.skills-tags-container {
+.article-tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -53,11 +59,11 @@
   margin-top: 24px;
 }
 
-.skills-tags-container a {
+.article-tags-container a {
   text-decoration: none;
 }
 
-.skill-tag {
+.article-tag {
   background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
   color: #ffffff;
   padding: 8px 18px;
@@ -69,35 +75,41 @@
 
 @media (max-width: 768px) {
 
-  .skills-details-section {
+  .article-header {
     margin-top: 0.2rem;
   }
 
-  .skills-details-logo {
+  .article-header-logo {
     padding: 4px;
+    width: 20%;
   }
 
-  .skills-details-title {
-    margin-top: 1.2rem;
-    font-size: 2rem;
+  .article-header-title {
+    /* margin-top: 1.2rem; */
+    margin-top: 1rem;
+    font-size: 1.6rem;
   }
 
-  .skills-article-section {
+  .article-header-title--standalone {
+    margin-top: 0;
+  }
+
+  .article-body {
     padding-left: 6%;
     padding-right: 6%;
+    font-size: 1rem;
   }
 
-  .skills-article-subtitle {
+  .article-subtitle {
     margin-top: 2rem;
-    font-family: 'Next Art';
     font-size: 1.2rem;
   }
 
-  #skills-associated-work {
+  .article-tags-title {
     margin-top: 12%;
   }
 
-  .skill-tag {
+  .article-tag {
     padding: 4px 12px;
     font-size: 0.9rem;
   }
