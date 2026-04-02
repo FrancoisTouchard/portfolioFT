@@ -1,5 +1,5 @@
 .works-page-container {
-  background-color: #0f172a;
+  background-color: #080e1a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,11 +8,11 @@
 
 .works-page-title {
   font-family: 'Next Art';
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.4rem;
   color: #f8fafc;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .works-cards-container {
@@ -41,8 +41,6 @@
 @media (max-width: 768px) {
   .works-page-title {
     font-size: 1.6rem;
-    margin-bottom: 2vh;
-    margin-top: 0;
   }
 
   .works-cards-container {
