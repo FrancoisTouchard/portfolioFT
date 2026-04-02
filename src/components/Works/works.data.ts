@@ -5,7 +5,12 @@ import indigoProject from '../../assets/works/indigoProject.jpg';
 import myGifLibrary from '../../assets/works/myGifLibrary.png';
 import { SKILLS_TAGS } from '../../utils/navigation/navigation-links';
 import { WorkProps } from './types';
-import { CARROUSEL_ARTICLE } from './works.article';
+import {
+  CARROUSEL_ARTICLE,
+  CHATBOT_ARTICLE,
+  INDIGO_ARTICLE,
+  MY_GIF_LIBRARY_ARTICLE,
+} from './works.article';
 
 export const WORKS: WorkProps[] = [
   {
@@ -59,15 +64,7 @@ export const WORKS: WorkProps[] = [
   },
   {
     id: 3,
-    article: {
-      intro: 'to do',
-      context: undefined,
-      steps: undefined,
-      actors: undefined,
-      results: undefined,
-      future: undefined,
-      criticism: undefined,
-    },
+    article: CHATBOT_ARTICLE,
     description:
       'Intégration du chatbot HelloMyBot dans l’application mobile Pickme. Cette solution consistait à guider les utilisateurs vers un chatbot afin de leur fournir des réponses aux questions courantes.',
     illustration: { src: helloMyBot, alt: 'Illustration du chatbot' },
@@ -78,20 +75,13 @@ export const WORKS: WorkProps[] = [
       SKILLS_TAGS.react,
       SKILLS_TAGS.reactNative,
       SKILLS_TAGS.communication,
+      SKILLS_TAGS.commitment,
     ],
     title: 'Pickme & HelloMyBot',
   },
   {
     id: 4,
-    article: {
-      intro: 'to do',
-      context: undefined,
-      steps: undefined,
-      actors: undefined,
-      results: undefined,
-      future: undefined,
-      criticism: undefined,
-    },
+    article: INDIGO_ARTICLE,
     description:
       'Projet personnel visant à améliorer ma maîtrise des interactions tactiles et des animations en React Native. Il s’agit d’une reproduction d’un niveau du jeu Pokémon, codé en TypeScript et JavaScript.',
     illustration: { src: indigoProject, alt: 'Illustration Indigo Project' },
@@ -110,15 +100,7 @@ export const WORKS: WorkProps[] = [
   },
   {
     id: 5,
-    article: {
-      intro: 'to do',
-      context: undefined,
-      steps: undefined,
-      actors: undefined,
-      results: undefined,
-      future: undefined,
-      criticism: undefined,
-    },
+    article: MY_GIF_LIBRARY_ARTICLE,
     description:
       'SPA React permettant à l’utilisateur de rechercher des gifs via l’API de Giphy et de les organiser par catégorie afin de pouvoir accéder rapidement à ses gifs favoris.',
     illustration: {
