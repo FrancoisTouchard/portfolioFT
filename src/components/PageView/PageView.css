@@ -1,9 +1,16 @@
-.PageView {
+.page-view {
   display: flex;
   flex-direction: column;
   flex: 1;
   width: 100%;
-  /* prevents navbar from overlapping, 70px = navbar height */
-  padding-top: 70px;
+  /* prevents navbar from overlapping, 80px = navbar height */
+  padding-top: 80px;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+  .page-view {
+    padding-top: 50px;
+  }
 }

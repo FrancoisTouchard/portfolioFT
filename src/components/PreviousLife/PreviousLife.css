@@ -1,14 +1,14 @@
 .previous-life-container {
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .previous-life-title {
   font-family: 'Next Art';
   font-weight: 600;
-  font-size: 2.2em;
+  font-size: 2.4rem;
   line-height: 1.1;
   text-align: center;
   margin-bottom: 1vh;
@@ -27,6 +27,11 @@
   }
 
   .previous-life-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
+
+  .previous-life-text {
+    font-size: 1rem;
+  }
+
 }

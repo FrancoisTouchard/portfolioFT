@@ -34,7 +34,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="timeline-container">
       <h1 className="main-title">Mon Parcours</h1>
 
       <div className="timeline">

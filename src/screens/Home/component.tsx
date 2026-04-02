@@ -11,9 +11,7 @@ const Home = () => {
   return (
     <PageView>
       <div className="home-container">
-        <div className="intro-container">
-          <Introduction />
-        </div>
+        <Introduction />
         <Timeline />
         <PreviousLife />
       </div>

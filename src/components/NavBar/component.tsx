@@ -86,7 +86,7 @@ const NavBar = () => {
   }, [closeAll]);
 
   return (
-    <nav className="NavBar">
+    <nav className="navbar">
       <div className="nav-description" onClick={onNameClick}>
         <span className="nav-description-name">François Touchard</span>
         <span className="nav-description-job">Développeur Frontend</span>
