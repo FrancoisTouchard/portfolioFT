@@ -1,12 +1,15 @@
 .contact-hero {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - var(--navbar-height));
   display: flex;
   flex-direction: column;
 }
 
-.contact-hero .intro-background-container {
-  flex: 1;
-  height: auto;
+/* Même calcul que dans Home.css pour gérer la hauteur de Introduction et du composant en dessous*/
+@media (min-width: 769px) {
+  .contact-hero .intro-background-container {
+    height: max(calc(min(400px, 30vw) * 1.41421356 + 40px),
+        calc(100vh - var(--navbar-height) - 140px));
+  }
 }
 
 .contact-email {
@@ -24,13 +27,8 @@
 
 @media (max-width: 768px) {
   .contact-hero {
-    height: calc(100vh - 50px);
-  }
-
-  /* Introduction keeps its natural height on mobile */
-  .contact-hero .intro-background-container {
-    flex: none;
-    height: calc(min(400px, 30vw) * 1.41421356 + 40px);
+    height: calc(100vh - var(--navbar-height));
+    min-height: 0;
   }
 
   .contact-standalone-wrapper {

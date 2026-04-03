@@ -47,6 +47,16 @@
 }
 
 :root {
+  --navbar-height: 80px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 50px;
+  }
+}
+
+:root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
