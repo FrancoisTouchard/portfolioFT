@@ -1,0 +1,51 @@
+.contact-hero {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-hero .intro-background-container {
+  flex: 1;
+  height: auto;
+}
+
+.contact-email {
+  font-family: 'Next Art';
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #f8fafc;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact-standalone-wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: calc(100vh - 50px);
+  }
+
+  /* Introduction keeps its natural height on mobile */
+  .contact-hero .intro-background-container {
+    flex: none;
+    height: calc(min(400px, 30vw) * 1.41421356 + 40px);
+  }
+
+  .contact-standalone-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-standalone-wrapper .outer-square {
+    width: min(260px, 60vw);
+    height: min(260px, 60vw);
+  }
+
+  .contact-email {
+    font-size: 0.8rem;
+  }
+}

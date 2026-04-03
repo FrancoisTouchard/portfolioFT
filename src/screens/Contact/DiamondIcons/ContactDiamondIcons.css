@@ -1,0 +1,70 @@
+.contact-diamonds {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mini-diamond {
+  position: absolute;
+  width: 32%;
+  height: 32%;
+  background: var(--outer-square-border);
+  padding: 3px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.mini-diamond-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*filter: invert(1) : les svg noirs sont rendus en blanc*/
+.contact-icon {
+  transform: rotate(-45deg);
+  width: 45%;
+  height: 45%;
+  filter: invert(1);
+}
+
+/*Positionner tous les mini-diamants à l'intérieur du grand*/
+.mini-diamond--top {
+  top: 25%;
+  left: 25%;
+}
+
+.mini-diamond--right {
+  top: 25%;
+  left: 75%;
+}
+
+.mini-diamond--left {
+  top: 75%;
+  left: 25%;
+}
+
+.mini-diamond--bottom {
+  top: 75%;
+  left: 75%;
+}
+
+.contact-diamonds-label {
+  transform: rotate(-45deg);
+  color: #f8fafc;
+  font-family: 'Next Art';
+  font-weight: 700;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-diamonds-label {
+    font-size: 1.2rem;
+  }
+}

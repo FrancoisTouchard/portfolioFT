@@ -27,11 +27,11 @@
   z-index: 1;
 }
 
-.square {
+.outer-square {
   width: min(400px, 30vw);
   height: min(400px, 30vw);
   position: relative;
-  background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+  background: var(--outer-square-border);
   padding: 5px;
   transform: rotate(45deg);
   flex-shrink: 0;
