@@ -49,13 +49,16 @@
 }
 
 .nav-links a:hover {
-  color: chartreuse;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .nav-link.active {
   color: #f0f0f0 !important;
   font-weight: 600;
-  border-bottom: 2px solid #ffffff;
+  background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%) no-repeat 0 100% / 100% 2px;
 }
 
 /* Gestion du burger menu */
