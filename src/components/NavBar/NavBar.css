@@ -71,7 +71,7 @@
 
 .mobile-menu {
   position: absolute;
-  top: 70px;
+  top: var(--navbar-height);
   right: 12px;
   background-color: #0f172a;
   display: flex;
