@@ -32,13 +32,15 @@ const Article = ({
       <h2 className="article-subtitle article-tags-title">
         {tagsContainerTitle}
       </h2>
-      <div className="article-tags-container">
-        {tags.map(({ label, to }) => (
-          <Link key={to} to={to}>
-            <span className="article-tag">{label}</span>
-          </Link>
-        ))}
-      </div>
+      {tags && (
+        <div className="article-tags-container">
+          {tags.map(({ label, to }) => (
+            <Link key={to} to={to}>
+              <span className="article-tag">{label}</span>
+            </Link>
+          ))}
+        </div>
+      )}
     </section>
   </>
 );
