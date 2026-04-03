@@ -1,5 +1,3 @@
-import './Home.css';
-
 import React from 'react';
 
 import wavePicture from '../../assets/backgrounds/bg-wave-reversed.jpg';
@@ -13,14 +11,12 @@ const HOME_SQUARE_BORDER = 'linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%)';
 const Home = () => {
   return (
     <PageView>
-      <div className="home-container">
-        <Introduction
-          pictureSrc={wavePicture}
-          squareBorderColor={HOME_SQUARE_BORDER}
-        />
-        <Timeline />
-        <PreviousLife />
-      </div>
+      <Introduction
+        pictureSrc={wavePicture}
+        squareBorderColor={HOME_SQUARE_BORDER}
+      />
+      <Timeline />
+      <PreviousLife />
     </PageView>
   );
 };

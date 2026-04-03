@@ -14,27 +14,25 @@ const CONTACT_SQUARE_BORDER =
 const Contact = () => {
   return (
     <PageView>
-      <div className="contact-hero">
-        <Introduction
-          pictureSrc={contactBgPicture}
-          squareBorderColor={CONTACT_SQUARE_BORDER}
-          secondDiamondContent={<ContactSecondDiamond />}
-        />
-        <div className="contact-standalone-wrapper">
-          <div
-            className="outer-square"
-            style={
-              {
-                '--outer-square-border': CONTACT_SQUARE_BORDER,
-              } as React.CSSProperties
-            }>
-            <div className="inner-square">
-              <ContactDiamondIcons />
-            </div>
+      <Introduction
+        pictureSrc={contactBgPicture}
+        squareBorderColor={CONTACT_SQUARE_BORDER}
+        secondDiamondContent={<ContactSecondDiamond />}
+      />
+      <div className="contact-standalone-wrapper">
+        <div
+          className="outer-square"
+          style={
+            {
+              '--outer-square-border': CONTACT_SQUARE_BORDER,
+            } as React.CSSProperties
+          }>
+          <div className="inner-square">
+            <ContactDiamondIcons />
           </div>
         </div>
-        <p className="contact-email">FRANCOIS.TOUCHARD.WOS@GMAIL.COM</p>
       </div>
+      <p className="contact-email">FRANCOIS.TOUCHARD.WOS@GMAIL.COM</p>
     </PageView>
   );
 };
