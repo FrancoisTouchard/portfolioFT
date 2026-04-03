@@ -1,0 +1,14 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Pour le desktop, assure qu'on ait dans le viewport le composant Introduction + le début de la ligne de Timeline
+Assure aussi que le conteneur ne sera jamais plus petit que la hauteur du diamant (1,414... = ratio entre la hauteur du carré et celle de sa diagonale)
+*/
+@media (min-width: 769px) {
+  .home-container .intro-background-container {
+    height: max(calc(min(400px, 30vw) * 1.41421356 + 40px),
+        calc(100vh - var(--navbar-height) - 140px));
+  }
+}

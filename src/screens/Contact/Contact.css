@@ -4,6 +4,14 @@
   flex-direction: column;
 }
 
+/* Même calcul que dans Home.css pour gérer la hauteur de Introduction et du composant en dessous*/
+@media (min-width: 769px) {
+  .contact-hero .intro-background-container {
+    height: max(calc(min(400px, 30vw) * 1.41421356 + 40px),
+        calc(100vh - var(--navbar-height) - 140px));
+  }
+}
+
 .contact-email {
   font-family: 'Next Art';
   font-weight: 700;

@@ -4,14 +4,6 @@
   height: calc(min(400px, 30vw) * 1.41421356 + 40px);
 }
 
-/*Ensure Introduction component takes the maximum available height while keeping space for components placed below*/
-@media (min-width: 769px) {
-  .intro-background-container {
-    height: max(calc(min(400px, 30vw) * 1.41421356 + 40px),
-        calc(100vh - var(--navbar-height) - 140px));
-  }
-}
-
 .intro-background-picture {
   position: absolute;
   top: 0;

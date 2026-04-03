@@ -22,7 +22,7 @@ const About = () => {
         <AboutArticle />
       </div>
     </PageView>
-  );
-};
+  )
+}
 
 export default About;
