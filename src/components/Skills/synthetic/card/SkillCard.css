@@ -42,12 +42,13 @@
 @media (max-width: 768px) {
 
   .skills-card {
-    min-height: 240px;
+    width: 10rem;
   }
 
   .skills-card-title {
     font-size: 1.25rem;
     word-wrap: break-word;
+    margin-bottom: 0;
   }
 
 }
