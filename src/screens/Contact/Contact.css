@@ -34,7 +34,8 @@
   }
 
   .contact-standalone-wrapper {
-    flex: 2;
+    flex: 1;
+    min-height: calc(min(260px, 60vw) * 1.41421356 + 20px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +47,8 @@
   }
 
   .contact-email {
+    flex: none;
+    padding: 16px 0;
     font-size: 0.8rem;
   }
 }
