@@ -4,6 +4,7 @@ import React from 'react';
 
 import { SKILLS } from '../skills.data';
 import SkillCard from './card/component';
+import SkillsRadarCharts from './charts/component';
 
 const Skills = () => {
   const hard_skills = SKILLS.filter(s => s.category === 'HARD');
@@ -38,6 +39,8 @@ const Skills = () => {
           );
         })}
       </div>
+      <h2 className="skills-subtitle ">Degrés de maîtrise</h2>
+      <SkillsRadarCharts />
     </div>
   );
 };

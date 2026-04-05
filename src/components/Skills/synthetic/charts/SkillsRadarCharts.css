@@ -1,0 +1,66 @@
+.skills-radar-charts {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 40px 56px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.skills-radar-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.skills-radar-legend-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.skills-radar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Next Art', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(248, 250, 252, 0.9);
+}
+
+.skills-radar-legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.skills-radar-legend-dot--hard {
+  background-color: rgba(99, 179, 237, 1);
+}
+
+.skills-radar-legend-dot--soft {
+  background-color: rgba(154, 117, 228, 1);
+}
+
+.skills-radar-legend {
+  font-size: 0.82rem;
+  color: rgba(248, 250, 252, 0.6);
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .skills-radar-charts {
+    max-width: 340px;
+    padding: 32px 10px 56px;
+  }
+}
