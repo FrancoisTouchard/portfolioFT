@@ -13,13 +13,17 @@ const ABOUT_SQUARE_BORDER =
 const About = () => {
   return (
     <PageView>
-      <Introduction
-        pictureSrc={aboutBgPicture}
-        squareBorderColor={ABOUT_SQUARE_BORDER}
-        secondDiamondContent={<span className="text-job">À propos de moi</span>}
-      />
-      <div className="about-article-container">
-        <AboutArticle />
+      <div className="about-hero">
+        <Introduction
+          pictureSrc={aboutBgPicture}
+          squareBorderColor={ABOUT_SQUARE_BORDER}
+          secondDiamondContent={
+            <span className="text-job">À propos de moi</span>
+          }
+        />
+        <div className="about-article-container">
+          <AboutArticle />
+        </div>
       </div>
     </PageView>
   );
