@@ -13,12 +13,14 @@
 }
 
 .contact-email {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Next Art';
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #f8fafc;
-  text-align: center;
-  padding: 2rem 0;
 }
 
 .contact-standalone-wrapper {
@@ -32,7 +34,7 @@
   }
 
   .contact-standalone-wrapper {
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
