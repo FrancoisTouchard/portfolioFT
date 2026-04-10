@@ -10,6 +10,7 @@ import {
   EDIFICE_ARTICLE,
   EPITECH_ARTICLE,
   ISCOD_ARTICLE,
+  PICKME_ARTICLE,
 } from './experience.articles';
 import { ExperienceDetailsProps } from './types';
 
@@ -63,10 +64,20 @@ export const EXPERIENCES: ExperienceDetailsProps[] = [
   },
   {
     id: 3,
-    article: { entity: 'todo' },
-    articleTags: [],
+    article: PICKME_ARTICLE,
+    articleTags: [
+      WORKS_TAGS.chatbot,
+      WORKS_TAGS.myGifLibrary,
+      SKILLS_TAGS.reactNative,
+      SKILLS_TAGS.react,
+      SKILLS_TAGS.javascript,
+      SKILLS_TAGS.typescript,
+      SKILLS_TAGS.communication,
+      SKILLS_TAGS.commitment,
+      SKILLS_TAGS.thinking,
+    ],
     articleTitle: 'Pickme',
-    cardTags: ['React Native', 'Node.js', 'PostgreSQL'],
+    cardTags: ['React Native', 'React', 'Node.js', 'PostgreSQL'],
     cardTitle: 'Développeur Fullstack Mobile',
     company: 'Pickme (en stage)',
     date: '08/03/2023 au 07/09/2023',

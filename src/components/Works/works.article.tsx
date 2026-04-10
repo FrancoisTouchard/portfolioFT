@@ -302,6 +302,18 @@ export const WIKI_ARTICLE: WorkProps['article'] = {
         nous a présenté des maquettes détaillant la place qu&apos;allait occuper
         Cours & Wiki dans le flux des actions possibles.
       </p>
+
+      <p>
+        Avec un développeur sénior de l’équipe mobile, nous avons donc du
+        analyser les propositions des designers pour garantir l&apos;intégrité
+        des mécaniques de navigation au sein de l&apos;application. Une demande
+        des designers était notamment de pouvoir accéder au module depuis la
+        tab-bar (la barre d’accès rapide en bas de l&apos;écran). Cela
+        complexifiait le développement, car il fallait réaliser cela pour
+        certains clients, et proposer d&apos;autres modules dans cette tab-bar
+        pour d&apos;autres clients.
+      </p>
+
       <p>Nous avions donc trois objectifs à remplir :</p>
       <ul>
         <li>
@@ -324,13 +336,15 @@ export const WIKI_ARTICLE: WorkProps['article'] = {
     <>
       <p>
         Au commencement, une Académie a commandité le projet. Les équipes
-        d&apos;Édifice ont recueilli et qualifié le besoin pour établir le{' '}
+        d&apos;Édifice en charge de la gestion des projets et des évolutions du
+        produit ont recueilli et qualifié le besoin pour établir le{' '}
         <b>cahier des charges</b>.
       </p>
       <p>
         La <b>réalisation des maquettes par l&apos;équipe design</b> a constitué
         l&apos;étape suivante, entraînant quelques allers/retours avec les
-        commanditaires pour garantir une bonne compréhension du besoin initial.
+        commanditaires pour garantir une bonne compréhension du besoin initial
+        avant de passer à l&apos;exécution.
       </p>
       <p>
         Le Product Manager a ensuite établi le <b>planning de développement</b>{' '}
@@ -352,7 +366,11 @@ export const WIKI_ARTICLE: WorkProps['article'] = {
         des tickets propres à l&apos;application mobile.
       </p>
       <p>
-        À partir de là, les tickets ont été répartis dans différents sprints.
+        À partir de là, chaque équipe était en mesure de commencer ses
+        développements et les tickets ont été répartis dans différents sprints
+        pour établir des séquences de travail.
+      </p>
+      <p>
         Nous développions les premières fonctionnalités puis les soumettions à
         l&apos;<b>équipe en charge du contrôle qualité</b> qui nous faisait des
         retours sur les éventuels bugs techniques et de mise en page. Les
@@ -453,6 +471,14 @@ export const WIKI_ARTICLE: WorkProps['article'] = {
         <b>gestion de la navigation et des flux de données</b>, tandis que
         j&apos;avais la charge des parties « les plus simples ».
       </p>
+
+      <p>
+        Mon collègue avait pris le temps de m’expliquer de nombreux détails sur
+        le fonctionnement du produit que nous développons chez Édifice, et
+        j&apos;ai su profiter de ce moment pour engranger un maximum
+        d’informations qui m&apos;ont été très utiles sur les chantiers qui ont
+        suivi.
+      </p>
       <p>
         Pour réaliser mes tâches, j&apos;ai dû utiliser plusieurs{' '}
         <b>composants déjà existants</b>, comme ceux servant à afficher du
@@ -468,6 +494,14 @@ export const WIKI_ARTICLE: WorkProps['article'] = {
         (jpeg, png, svg) et adapter la taille de l&apos;image à son conteneur.
         Il a par la suite été{' '}
         <b>utilisé sans difficultés par mes collègues dans un autre module</b>.
+      </p>
+
+      <p>
+        Lorsqu&apos;on travaille sur une large codebase avec plusieurs autres
+        développeurs, il est essentiel de savoir créer des composants
+        réutilisables et faciles à prendre en main. Je pense avoir répondu à
+        cette attente avec ce composant, qui a par la suite été utilisé sans
+        difficultés par mes collègues dans un autre module.
       </p>
       <p>
         Cette expérience constituait mon{' '}
