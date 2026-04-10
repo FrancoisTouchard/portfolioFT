@@ -59,7 +59,7 @@ const CHART_OPTIONS = {
       angleLines: {
         color: 'rgba(248, 250, 252, 0.15)',
       },
-      startAngle: 16,
+      startAngle: 18,
       afterFit(scale: RadialLinearScale) {
         scale.xCenter = Math.round(scale.chart.width / 2);
       },
