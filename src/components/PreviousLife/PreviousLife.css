@@ -17,7 +17,6 @@
 .previous-life-text {
   font-family: 'Avenir', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 1.1rem;
-  text-align: justify;
 }
 
 @media (max-width: 768px) {
