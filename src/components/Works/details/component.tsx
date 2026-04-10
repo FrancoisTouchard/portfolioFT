@@ -15,7 +15,7 @@ const WorkDetails = () => {
 
   const sections = [
     { title: 'Introduction', content: work.article.intro },
-    { title: 'Le Contexte', content: work.article.context },
+    { title: 'Contexte et objectifs', content: work.article.context },
     { title: 'Les Étapes', content: work.article.steps },
     { title: 'Les Acteurs', content: work.article.actors },
     { title: 'Les Résultats', content: work.article.results },

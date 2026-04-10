@@ -1,13 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
+import { SKILLS_TAGS } from '../../utils/navigation/navigation-links';
 import { WorkProps } from './types';
 
 export const CARROUSEL_ARTICLE: WorkProps['article'] = {
   intro: (
     <>
       <p>
-        Lors de mon alternance chez Édifice, on m’a confié la mission de
-        développer un carrousel multimédia devant permettre de{' '}
+        Lors de mon alternance chez{' '}
+        <Link to={'/experiences/edifice'}>Édifice</Link>, on m’a confié la
+        mission de développer un carrousel multimédia devant permettre de{' '}
         <b>
           visualiser, télécharger et partager des fichiers image, audio, vidéo
           et pdf.
@@ -261,14 +264,238 @@ export const CARROUSEL_ARTICLE: WorkProps['article'] = {
   ),
 };
 
+export const WIKI_ARTICLE: WorkProps['article'] = {
+  intro: (
+    <>
+      <p>
+        <Link to={'/experiences/edifice'}>Édifice</Link> édite un{' '}
+        <b>Espace de Travail Numérique</b> sous la forme d&apos;une application
+        web et mobile. En 2025, le module <b>Cours & Wiki</b> a été développé
+        par les équipes pour donner la possibilité aux enseignants de créer
+        facilement des cours sur le site web grâce à un éditeur de texte enrichi
+        permettant notamment d&apos;intégrer des contenus multimédia.
+      </p>
+      <p>
+        Une fois le cours créé, l&apos;enseignant peut le{' '}
+        <b>partager au groupe de son choix</b>, comme une classe d&apos;élèves
+        ou des collègues.
+      </p>
+    </>
+  ),
+  context: (
+    <>
+      <p>
+        La tâche qui m&apos;a été confiée consistait à proposer la{' '}
+        <b>déclinaison de Cours & Wiki dans l&apos;application mobile</b> et
+        donc de faire en sorte que les cours créés puissent être consultables.
+      </p>
+      <p>
+        Nous avions un <b>enjeu de timing</b> à respecter puisqu&apos;il fallait
+        que ce développement soit prêt à être déployé en même temps que sa
+        version web.
+      </p>
+      <p>
+        Intégrer un nouveau module à l&apos;application pose une{' '}
+        <b>problématique liée à la navigation</b> : il fallait définir comment y
+        accéder, comment le quitter et comment naviguer dans le module. Pour
+        cela, nous avons notamment reçu l&apos;aide de l&apos;équipe design qui
+        nous a présenté des maquettes détaillant la place qu&apos;allait occuper
+        Cours & Wiki dans le flux des actions possibles.
+      </p>
+      <p>Nous avions donc trois objectifs à remplir :</p>
+      <ul>
+        <li>
+          Développer un module compatible avec l&apos;architecture applicative,
+          notamment du point de vue de la navigation en prévoyant toutes les
+          déclinaisons
+        </li>
+        <li>
+          Réaliser l&apos;ensemble des fonctionnalités permettant de consulter
+          les cours
+        </li>
+        <li>
+          Achever le chantier en même temps que l&apos;équipe chargée de la
+          version web
+        </li>
+      </ul>
+    </>
+  ),
+  steps: (
+    <>
+      <p>
+        Au commencement, une Académie a commandité le projet. Les équipes
+        d&apos;Édifice ont recueilli et qualifié le besoin pour établir le{' '}
+        <b>cahier des charges</b>.
+      </p>
+      <p>
+        La <b>réalisation des maquettes par l&apos;équipe design</b> a constitué
+        l&apos;étape suivante, entraînant quelques allers/retours avec les
+        commanditaires pour garantir une bonne compréhension du besoin initial.
+      </p>
+      <p>
+        Le Product Manager a ensuite établi le <b>planning de développement</b>{' '}
+        en estimant une durée approximative afin de commencer à planifier les
+        sprints.
+      </p>
+      <p>
+        Ensuite a eu lieu le <b>lancement officiel du chantier</b>, une réunion
+        au cours de laquelle les designers ont présenté les maquettes aux
+        développeurs. C&apos;est une étape clé qui permet de poser des questions
+        pour bien comprendre l&apos;intention et d&apos;estimer la faisabilité
+        en repérant les points techniques les plus ardus.
+      </p>
+      <p>
+        L&apos;étape suivante a été un <b>refinement (poker planning)</b>, une
+        cérémonie Scrum où les développeurs attribuent des story points aux
+        tâches préalablement découpées en tickets. Un premier refinement a eu
+        lieu pour la version web, et un second a été dédié à la qualification
+        des tickets propres à l&apos;application mobile.
+      </p>
+      <p>
+        À partir de là, les tickets ont été répartis dans différents sprints.
+        Nous développions les premières fonctionnalités puis les soumettions à
+        l&apos;<b>équipe en charge du contrôle qualité</b> qui nous faisait des
+        retours sur les éventuels bugs techniques et de mise en page. Les
+        sprints se sont enchaînés jusqu&apos;à la mise en production du module.
+      </p>
+      <p>
+        Le module a ensuite été déployé en <b>bêta test</b> auprès des
+        commanditaires du projet, puis enfin <b>mis en production</b>.
+      </p>
+    </>
+  ),
+  actors: (
+    <>
+      <p>
+        Le développement de Cours & Wiki a mobilisé{' '}
+        <b>tous les métiers emblématiques de la méthode Agile/Scrum</b>, du
+        Product Manager/Owner aux designers en passant par les testeurs et bien
+        sûr les développeurs.
+      </p>
+      <p>
+        J&apos;ai pu échanger avec tous ces corps de métier, et notamment avec
+        un <b>développeur sénior de l&apos;équipe mobile</b>. Celui-ci
+        s&apos;est vu attribuer les tâches les plus techniques et m&apos;a
+        montré comment il procédait pour les appréhender puis les réaliser.
+      </p>
+      <p>
+        De mon côté, j&apos;ai notamment eu la charge de{' '}
+        <b>développer entièrement deux écrans</b> :
+      </p>
+      <ul>
+        <li>
+          L&apos;écran qui présente le cours avec l&apos;image, le titre, le
+          texte d&apos;introduction et la liste des pages et sous-pages
+        </li>
+        <li>
+          L&apos;écran présentant une page de cours avec le titre, le bandeau
+          d&apos;informations et le contenu du cours
+        </li>
+      </ul>
+    </>
+  ),
+  results: (
+    <>
+      <p>
+        Plusieurs semaines après la mise en production, les statistiques
+        d&apos;utilisation ont révélé que de{' '}
+        <b>nombreux enseignants s&apos;étaient emparés du module</b> pour
+        produire des cours, et les chiffres sur la consultation des ressources
+        créées étaient également satisfaisants.
+      </p>
+      <p>
+        D&apos;un point de vue technique, nous avons été particulièrement
+        satisfaits de constater que Cours & Wiki n&apos;a généré{' '}
+        <b>aucun bug ou dysfonctionnement majeur</b> dans les mois suivant sa
+        mise en production, et que le module s&apos;est parfaitement intégré
+        dans l&apos;application existante.
+      </p>
+      <p>
+        Participer à ce chantier m&apos;a notamment donné l&apos;occasion
+        d&apos;approfondir ma compréhension du{' '}
+        <b>fonctionnement de la navigation de l&apos;application</b> et de
+        comprendre comment fonctionne l&apos;intégration d&apos;un nouveau
+        module et la gestion de la barre de navigation.
+      </p>
+      <p>
+        J&apos;ai aussi pu progresser sur le plan purement frontend, en créant
+        une <b>animation de déploiement de la card</b> contenant le résumé du
+        cours, ou encore en développant la liste des pages et sous-pages qui
+        possède une indentation particulière.
+      </p>
+    </>
+  ),
+  future: (
+    <>
+      <p>
+        Cours & Wiki est un module offrant des fonctionnalités clés dans le
+        contexte scolaire et est donc amené à <b>beaucoup évoluer</b>.
+      </p>
+      <p>
+        La prochaine évolution consistera à rendre possible l&apos;action de{' '}
+        <b>commenter un cours</b> par les utilisateurs, sous la forme d&apos;un
+        espace dédié aux commentaires, à l&apos;image de ce qui existe sur les
+        réseaux sociaux.
+      </p>
+      <p>
+        Ultérieurement, nous rendrons possible la{' '}
+        <b>modification et l&apos;édition des cours</b> par les enseignants
+        directement depuis l&apos;application mobile. Actuellement, les cours ne
+        sont disponibles qu&apos;en lecture seule.
+      </p>
+    </>
+  ),
+  criticism: (
+    <>
+      <p>
+        Nous étions deux développeurs sur ce projet. J&apos;ai pu bénéficier de
+        l&apos;expertise du développeur sénior sur toute la{' '}
+        <b>gestion de la navigation et des flux de données</b>, tandis que
+        j&apos;avais la charge des parties « les plus simples ».
+      </p>
+      <p>
+        Pour réaliser mes tâches, j&apos;ai dû utiliser plusieurs{' '}
+        <b>composants déjà existants</b>, comme ceux servant à afficher du
+        texte. Je pense avoir bien saisi leur fonctionnement et les avoir
+        adaptés à mon cas d&apos;usage sans les modifier.
+      </p>
+      <p>
+        J&apos;ai aussi dû développer de{' '}
+        <b>nouveaux composants réutilisables</b> pour ce module. C&apos;est le
+        cas du composant servant à afficher l&apos;image du cours, qui affiche
+        par défaut le logo du module applicatif correspondant. Ce composant
+        devait pouvoir accueillir plusieurs types d&apos;images différents
+        (jpeg, png, svg) et adapter la taille de l&apos;image à son conteneur.
+        Il a par la suite été{' '}
+        <b>utilisé sans difficultés par mes collègues dans un autre module</b>.
+      </p>
+      <p>
+        Cette expérience constituait mon{' '}
+        <b>
+          premier chantier consistant à développer une fonctionnalité qui
+          n&apos;existait pas avant
+        </b>{' '}
+        et m&apos;a beaucoup aidé à m&apos;approprier la codebase et les bonnes
+        pratiques de développement auxquelles toute l&apos;équipe doit se
+        soumettre.
+      </p>
+      <p>
+        C&apos;était un projet particulièrement plaisant à réaliser et j&apos;ai
+        hâte de pouvoir prendre part à ses évolutions.
+      </p>
+    </>
+  ),
+};
+
 export const CHATBOT_ARTICLE: WorkProps['article'] = {
   intro: (
     <>
       <p>
-        Lors de mon stage chez Pickme, j’ai eu l’occasion d’intégrer l’accès au
-        chatbot HelloMyBot à l’application mobile. Il s’agit d’un chatbot qui
-        redirige automatiquement les utilisateurs vers les pages de la FAQ, et
-        est destiné à répondre aux questions simples et courantes liées à
+        Lors de mon stage chez <Link to={'/experiences/pickme'}>Pickme</Link>,
+        j’ai eu l’occasion d’intégrer l’accès au chatbot HelloMyBot à
+        l’application mobile. Il s’agit d’un chatbot qui redirige
+        automatiquement les utilisateurs vers les pages de la FAQ, et est
+        destiné à répondre aux questions simples et courantes liées à
         l’utilisation de Pickme.
       </p>
     </>
@@ -416,9 +643,13 @@ export const INDIGO_ARTICLE: WorkProps['article'] = {
   intro: (
     <>
       <p>
-        Ce projet personnel consistait à reproduire en React Native le niveau du
-        Plateau Indigo, issu des premiers jeux Pokémon sur Game Boy. L’ensemble
-        de ce projet à été réalisé en TypeScript, JavaScript et CSS.
+        Ce projet personnel consistait à reproduire en{' '}
+        <Link to={`/skills/${SKILLS_TAGS.reactNative.path}`}>React Native</Link>{' '}
+        le niveau du Plateau Indigo, issu des premiers jeux Pokémon sur Game
+        Boy. L’ensemble de ce projet à été réalisé en{' '}
+        <Link to={`/skills/${SKILLS_TAGS.typescript.path}`}>TypeScript</Link>,{' '}
+        <Link to={`/skills/${SKILLS_TAGS.javascript.path}`}>JavaScript</Link> et
+        CSS.
       </p>
     </>
   ),
@@ -603,7 +834,7 @@ export const INDIGO_ARTICLE: WorkProps['article'] = {
       <p>
         Au-delà du développement en lui-même, le fait d’avoir mis en place un
         cadre de travail rigoureux (pipeline ci/cd, formatage des commits,
-        configuration eslint et typescript, découpage des tickets sur trello),
+        configuration Eslint et TypeScript, découpage des tickets sur Trello),
         et d’avoir obtenu l’accompagnement d’un développeur sénior sur ce projet
         démontre ma volonté de <b>produire un travail soigné</b>, proche d’un
         contexte de travail en entreprise.
@@ -621,7 +852,8 @@ export const MY_GIF_LIBRARY_ARTICLE: WorkProps['article'] = {
   intro: (
     <>
       <p>
-        Ce projet est une Single Page Application React permettant à
+        Ce projet est une Single Page Application{' '}
+        <Link to={`/skills/${SKILLS_TAGS.react.path}`}>React</Link> permettant à
         l’utilisateur de rechercher des gifs via l’API de Giphy et de les
         organiser par catégorie afin de pouvoir accéder rapidement à ses gifs
         favoris.
@@ -633,14 +865,15 @@ export const MY_GIF_LIBRARY_ARTICLE: WorkProps['article'] = {
       <p>
         MyGifLibrary est le <b>résultat du test technique</b> qu’il m’avait été
         demandé de réaliser pour mon embauche en stage pour ma toute première
-        expérience professionnelle en tant que développeur fullstack chez
-        Pickme.
+        expérience professionnelle en tant que développeur fullstack chez{' '}
+        <Link to={'/experiences/pickme'}>Pickme</Link>.
       </p>
       <p>
         J’ai eu une semaine pour développer ce projet, mais mes journées étaient
-        prises par la formation à la Coding Academy d&apos;Epitech. J’estime
-        avoir mis deux jours pour réaliser ce test. À l&apos;époque j&apos;étais
-        débutant.
+        prises par la formation à la{' '}
+        <Link to={'/experiences/epitech'}>Coding Academy d&apos;Epitech</Link>.
+        J’estime avoir mis deux jours pour réaliser ce test. À l&apos;époque
+        j&apos;étais débutant.
       </p>
       <p>Voici le brief tel qu’il m’avait été donné par le CTO :</p>
       <p>

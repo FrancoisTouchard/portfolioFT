@@ -10,6 +10,7 @@ import {
   CHATBOT_ARTICLE,
   INDIGO_ARTICLE,
   MY_GIF_LIBRARY_ARTICLE,
+  WIKI_ARTICLE,
 } from './works.article';
 
 export const WORKS: WorkProps[] = [
@@ -37,15 +38,7 @@ export const WORKS: WorkProps[] = [
   },
   {
     id: 2,
-    article: {
-      intro: 'to do',
-      context: undefined,
-      steps: undefined,
-      actors: undefined,
-      results: undefined,
-      future: undefined,
-      criticism: undefined,
-    },
+    article: WIKI_ARTICLE,
     description:
       'Création d’un module applicatif offrant la possibilité aux enseignants de poster leurs cours au format wiki afin que les élèves puissent y accéder facilement et depuis n’importe où.',
     illustration: {
@@ -57,6 +50,7 @@ export const WORKS: WorkProps[] = [
       SKILLS_TAGS.javascript,
       SKILLS_TAGS.typescript,
       SKILLS_TAGS.reactNative,
+      SKILLS_TAGS.uxui,
       SKILLS_TAGS.communication,
       SKILLS_TAGS.thinking,
     ],
