@@ -3,9 +3,11 @@ import './Article.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import PhoneDemo from '../Demo/Phone/PhoneDemo';
 import { ArticleProps } from './types';
 
 const Article = ({
+  demoSrc,
   logo,
   sections,
   tags,
@@ -23,10 +25,11 @@ const Article = ({
       </h1>
     </section>
     <section className="article-body">
-      {sections.map(({ title: sectionTitle, content }) => (
+      {sections.map(({ title: sectionTitle, content }, index) => (
         <React.Fragment key={sectionTitle}>
           <h2 className="article-subtitle">{sectionTitle}</h2>
           {content}
+          {index === 0 && demoSrc && <PhoneDemo src={demoSrc} />}
         </React.Fragment>
       ))}
       <h2 className="article-subtitle article-tags-title">

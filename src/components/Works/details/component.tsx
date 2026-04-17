@@ -30,6 +30,7 @@ const WorkDetails = () => {
 
   return (
     <Article
+      demoSrc={work.article.demoSrc}
       sections={sections}
       tags={tags}
       tagsContainerTitle="Compétences associées"

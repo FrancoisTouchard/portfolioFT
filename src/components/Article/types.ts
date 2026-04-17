@@ -11,8 +11,8 @@ type ArticleTag = {
 };
 
 export type ArticleProps = {
+  demoSrc?: string;
   logo?: { src: string; alt: string };
-  media?: ReactNode;
   sections: ArticleSection[];
   tags?: ArticleTag[];
   tagsContainerTitle?: string;

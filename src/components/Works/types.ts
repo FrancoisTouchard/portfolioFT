@@ -12,6 +12,7 @@ export interface WorkProps {
     results: React.ReactNode;
     future: React.ReactNode;
     criticism: React.ReactNode;
+    demoSrc?: string;
   };
   description: string;
   illustration: { src: string; alt: string };

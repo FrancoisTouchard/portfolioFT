@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import carrouselDemo from '../../assets/works/demos/carrousel.mov';
+import chatbotDemo from '../../assets/works/demos/chatbot.mp4';
+import indigoDemo from '../../assets/works/demos/indigo.mp4';
+import wikiDemo from '../../assets/works/demos/wiki.mov';
 import { SKILLS_TAGS } from '../../utils/navigation/navigation-links';
 import { WorkProps } from './types';
 
@@ -262,6 +266,7 @@ export const CARROUSEL_ARTICLE: WorkProps['article'] = {
       </p>
     </>
   ),
+  demoSrc: carrouselDemo,
 };
 
 export const WIKI_ARTICLE: WorkProps['article'] = {
@@ -519,6 +524,7 @@ export const WIKI_ARTICLE: WorkProps['article'] = {
       </p>
     </>
   ),
+  demoSrc: wikiDemo,
 };
 
 export const CHATBOT_ARTICLE: WorkProps['article'] = {
@@ -671,6 +677,7 @@ export const CHATBOT_ARTICLE: WorkProps['article'] = {
       </p>
     </>
   ),
+  demoSrc: chatbotDemo,
 };
 
 export const INDIGO_ARTICLE: WorkProps['article'] = {
@@ -880,6 +887,7 @@ export const INDIGO_ARTICLE: WorkProps['article'] = {
       </p>
     </>
   ),
+  demoSrc: indigoDemo,
 };
 
 export const MY_GIF_LIBRARY_ARTICLE: WorkProps['article'] = {

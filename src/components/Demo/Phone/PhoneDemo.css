@@ -1,0 +1,37 @@
+.phone-demo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.phone-demo-frame-container {
+  position: relative;
+  width: 18rem;
+}
+
+.phone-demo-mockup {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.phone-demo-video {
+  position: absolute;
+  top: 9%;
+  left: 5.5%;
+  width: 90%;
+  height: 82%;
+  object-fit: contain;
+  background-color: #000;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+
+  .phone-demo-frame-container {
+    width: 12rem;
+  }
+}
