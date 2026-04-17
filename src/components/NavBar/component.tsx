@@ -96,7 +96,7 @@ const NavBar = () => {
           className={`nav-link ${isActive('/') ? 'active' : ''}`}
           to="/"
           onClick={closeAll}>
-          Accueil
+          Parcours
         </Link>
         <Link
           className={`nav-link ${isActive('/about') ? 'active' : ''}`}
@@ -176,7 +176,7 @@ const NavBar = () => {
       {isMobileMenuOpen && (
         <div className="mobile-menu" ref={mobileMenuRef}>
           <Link to="/" onClick={closeAll}>
-            Accueil
+            Parcours
           </Link>
           <Link to="/about" onClick={closeAll}>
             Présentation
