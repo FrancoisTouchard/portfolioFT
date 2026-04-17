@@ -98,6 +98,12 @@ const NavBar = () => {
           onClick={closeAll}>
           Accueil
         </Link>
+        <Link
+          className={`nav-link ${isActive('/about') ? 'active' : ''}`}
+          to="/about"
+          onClick={closeAll}>
+          Présentation
+        </Link>
         {/* Dropdown Skills */}
         <div className="nav-link-dropdown-wrapper" ref={skillsRef}>
           <Link
@@ -151,12 +157,6 @@ const NavBar = () => {
           )}
         </div>
         <Link
-          className={`nav-link ${isActive('/about') ? 'active' : ''}`}
-          to="/about"
-          onClick={closeAll}>
-          À propos
-        </Link>
-        <Link
           className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
           to="/contact"
           onClick={closeAll}>
@@ -177,6 +177,9 @@ const NavBar = () => {
         <div className="mobile-menu" ref={mobileMenuRef}>
           <Link to="/" onClick={closeAll}>
             Accueil
+          </Link>
+          <Link to="/about" onClick={closeAll}>
+            Présentation
           </Link>
 
           <div className="mobile-menu-item-wrapper" ref={skillsMobileRef}>
@@ -228,9 +231,6 @@ const NavBar = () => {
               </div>
             )}
           </div>
-          <Link to="/about" onClick={closeAll}>
-            À propos
-          </Link>
           <Link to="/contact" onClick={closeAll}>
             Contact
           </Link>
