@@ -1,0 +1,1 @@
+.contact-hero{min-height:calc(100vh - var(--navbar-height));display:flex;flex-direction:column}@media(min-width:769px){.about-hero .intro-background-container{height:max(calc(min(400px,30vw) * 1.41421356 + 40px),calc(100vh - var(--navbar-height) - 140px))}}.about-article-container{margin-top:3rem}@media(max-width:768px){.about-article-container{margin-top:0}}
