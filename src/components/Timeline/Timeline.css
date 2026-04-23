@@ -33,7 +33,7 @@
 .timeline-item {
   position: relative;
   margin-bottom: 80px;
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .timeline-item:last-child {
@@ -67,6 +67,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  /*centrer le marker sur la ligne*/
   transform: translate(-50%, -50%);
   z-index: 10;
 }

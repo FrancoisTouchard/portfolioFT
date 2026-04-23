@@ -11,6 +11,8 @@ const Timeline = () => {
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
@@ -21,8 +23,8 @@ const Timeline = () => {
         });
       },
       {
-        threshold: 0.2,
-        rootMargin: '0px 0px -100px 0px',
+        threshold: isMobile ? 0.1 : 0.2,
+        rootMargin: isMobile ? '0px 0px -20px 0px' : '0px 0px -100px 0px',
       },
     );
 
